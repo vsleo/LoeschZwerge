@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vue": "^5.0.10",
     "astro": "^5.7.4",
     "playwright": "^1.52.0",
     "stylelint": "^16.18.0"
