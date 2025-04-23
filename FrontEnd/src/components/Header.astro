@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import Logo from '../assets/Loeschzwerge_Logo.svg'
 ---
 
 <header>
@@ -6,12 +8,13 @@
     
        <div class="headline"> 
         <a href="/">
-        <img src="./src/assets/Löschzwerge Logo.svg" alt="Löschzwerge Logo" class="logo"/></a>
+        <!-- <img src="/images/Loeschzwerge_Logo.svg" alt="Löschzwerge Logo" class="logo"/></a>-->
+        <Image class="logo" src={Logo} alt="löschzwerge logo"/>
     </div>
     <div class="nav"> 
         <nav>
             <a href="/LoeschZwerge/car">Feuerwehrauto</a>
-            <a href="/test">test</a>
+            <a href="/LoeschZwerge/test">test</a>
         </nav>
     </div>
     
@@ -40,9 +43,7 @@
       left: 40px;
     }
     
-    .logo {
-      height: 60px;
-    }
+    
     
     /* Zentrierte Navigation */
     .nav nav {
