@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Eslint und Stylelint installieren
+        run: |
+          cd FrontEnd
+          npm install eslint --save-dev
+
       - name: Abhängigkeiten installieren
         run: npm ci
 
