@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: ESLint ausführen
-        run: npm run lint
+        run: cd FrontEnd npm run lint
 
       - name: Stylelint ausführen
-        run: npm run lint:style
+        run: cd FrontEnd npm run lint:style
