@@ -4,7 +4,6 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "static",
-  base: "/LoeschZwerge/",
+  base: "/LoeschZwerge",
   integrations: [vue()],
 });
