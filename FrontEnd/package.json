@@ -13,7 +13,8 @@
     "@astrojs/vue": "^5.0.10",
     "astro": "^5.7.4",
     "playwright": "^1.52.0",
-    "stylelint": "^16.18.0"
+    "stylelint": "^16.18.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@eslint/css": "^0.7.0",
