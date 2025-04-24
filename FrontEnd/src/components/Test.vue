@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>github actions test</div>
 </template>
 
 <script></script>
