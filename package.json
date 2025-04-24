@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@vitejs/plugin-vue": "^5.2.3"
+  },
+  "devDependencies": {
+    "stylelint-config-prettier": "^9.0.5"
   }
 }

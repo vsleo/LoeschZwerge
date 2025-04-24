@@ -1,5 +1,5 @@
 <template>
-  <div>hallo das ist eine vue komponente!</div>
+  <div></div>
 </template>
 
-<script setup></script>
+<script></script>
