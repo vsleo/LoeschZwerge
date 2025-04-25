@@ -35,6 +35,15 @@
       >
         Rolltor 3
       </a>
+      <a
+        href="/LoeschZwerge/"
+        target="_blank"
+        class="hotspot"
+        title="Sirene"
+        style="top: 36%; left: 9.5%; width: 2.3%; height: 2%;"
+      >
+        Sirene
+      </a>
     </div>
   </div>
 </template>
