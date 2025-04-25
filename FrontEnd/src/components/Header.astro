@@ -36,6 +36,7 @@
     justify-content: center; /* Zentriert .center */
     align-items: center; /* Vertikal zentriert (optional) */
     height: 7vw;
+    min-height: 48px;
   }
 
   /* Logo links oben fixieren */
@@ -47,15 +48,22 @@
   }
 
   .headline img {
-    height: 64px;
+    height: 4vw;
+    min-height: 32px;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
     image-rendering: crisp-edges;
     z-index: 1;
+    
+  }
+
+  .headline a:hover img {
+    transform: scale(1.03);
+    cursor: pointer;
   }
 
   nav {
     position: absolute;
-    bottom: 15%; /* Positioniert die Navigation 80% vom oberen Rand */
+    bottom: 25%; /* Positioniert die Navigation 80% vom oberen Rand */
 
     transform: translateX(-50%); /* Zentriert die Navigation */
     /* Vertikal zentriert (optional) */
@@ -65,7 +73,7 @@
   .nav nav {
     gap: 24px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: clamp(0.6rem, 1.5vw, 1.5vw);
   }
 
   /* Navigation Links */

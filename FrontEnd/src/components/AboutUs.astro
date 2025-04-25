@@ -4,9 +4,11 @@
 
 <div class="coorporation">
     <div class="text-container">
-        <p>Die Website ist ein Studentenprojekt der htw saar.<br>
-            Klicke auf das Logo um die Startseite der htw zu erreichen.
-        </p>
+        <div class="text-box">
+            <p>Diese Website ist ein Studentenprojekt aus dem Studiengang Praktische Informatik an der htw saar.<br>
+                Klicke auf das Logo um die Startseite der htw zu erreichen.
+            </p>
+        </div>
     </div>
     <div class="image-container">
         <a href="https://www.htwsaar.de/" target="blank">
@@ -20,26 +22,39 @@
 
     .coorporation{
         display: flex;
-        align-items:normal;
-        margin-top: 1vw;
+        justify-content: space-between;
+        align-items:flex-start;
+        margin-top: 1.5vw;
     }
 
     .text-container {
-        width: 60%;
+        width: 50%;
         margin-left: 5vw;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: x-large;
+        font-size: clamp(0.5rem, 1vw, 1vw);
         font-weight: 700;
         color: black;
     }
 
+    .text-box {
+        background-color: #D9DADB;
+        padding: 1vw;
+        border-radius: 1vw;
+        box-shadow: 2px 2px 8px rgba(red, green, blue, 0.01);
+        width: fit-content;
+        max-width: 100%;
+    }
+    
     .image-container {
-        width: 40%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 1vw;
     }
 
     img {
-        width: 80%;
+        width: 35vw;
     }
 
     .image-container a:hover img {
