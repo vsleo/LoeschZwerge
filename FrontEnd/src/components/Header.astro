@@ -1,135 +1,89 @@
 ---
 
-
-
 ---
 
 <header>
-  
-  
-
-    
-       <div class="headline"> 
-        <a href="/LoeschZwerge/"> <img src={`images/Loeschzwerge_Logo_lightblue.svg`} alt="Logo" /></a>
-        
-    </div>
-    <div class="nav"> 
-        <nav>
-            <a href="/LoeschZwerge/car">Feuerwehrauto</a>
-            <a href="/LoeschZwerge/test">test</a>
-        </nav>
-    </div>
-    
+  <div class="headline">
+    <a href="/LoeschZwerge/">
+      <img src={`images/Loeschzwerge_Logo_lightblue.svg`} alt="Logo" /></a
+    >
+  </div>
+  <div class="nav">
+    <nav>
+      <a href="/LoeschZwerge/car">Feuerwehrauto</a>
+      <a href="/LoeschZwerge/test">test</a>
+    </nav>
+  </div>
 </header>
 
-
 <style>
-/* Grundlegendes Reset & Body */
-body {
-  margin: 0;
-  background: #f9f4f4;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #4a3c3c;
-}
+  /* Grundlegendes Reset & Body */
+  body {
+    margin: 0;
+    background: #f9f4f4;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a3c3c;
+  }
 
-/* Header Styling */
-header {
-  position: relative;
-  background: #f7a8a8;
+  /* Header Styling */
+  header {
+    position: relative;
+    background: #f7a8a8;
     background: linear-gradient(to bottom, #f7a8a8, #f1baba);
-  box-shadow: 0 4px 12px rgba(247, 168, 168, 0.4);
-  overflow: visible;
-  display: flex;
-  justify-content: center;      /* Zentriert .center */
-  align-items: center;          /* Vertikal zentriert (optional) */
-  height: 7vw;
+    box-shadow: 0 4px 12px rgba(247, 168, 168, 0.4);
+    overflow: visible;
+    display: flex;
+    justify-content: center; /* Zentriert .center */
+    align-items: center; /* Vertikal zentriert (optional) */
+    height: 7vw;
+  }
 
-}
-
-/* Logo links oben fixieren */
-.headline {
-  margin: 0;
-  position: absolute;
-    top: 2vw; 
+  /* Logo links oben fixieren */
+  .headline {
+    margin: 0;
+    position: absolute;
+    top: 2vw;
     left: 4vw;
-         
-}
+  }
 
-.headline img {
-  height: 64px;
-  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
-  image-rendering: crisp-edges;
-}
+  .headline img {
+    height: 64px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+    image-rendering: crisp-edges;
+    z-index: 1;
+  }
 
-nav {
+  nav {
     position: absolute;
     bottom: 15%; /* Positioniert die Navigation 80% vom oberen Rand */
-    
+
     transform: translateX(-50%); /* Zentriert die Navigation */
-            /* Vertikal zentriert (optional) */
-  
-}
+    /* Vertikal zentriert (optional) */
+  }
 
-/* Navigation rechts daneben */
-.nav nav {
-  
-  gap: 24px;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
+  /* Navigation rechts daneben */
+  .nav nav {
+    gap: 24px;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
 
-/* Navigation Links */
-.nav a {
-  color: #6b4747;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: #ffe1e1;
-  box-shadow: 2px 2px 0 #d97d7d;
-  transition: all 0.2s ease;
+  /* Navigation Links */
+  .nav a {
+    color: #6b4747;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #ffe1e1;
+    box-shadow: 2px 2px 0 #d97d7d;
+    transition: all 0.2s ease;
+  }
 
-}
-
-/* Hover Effekt */
-.nav a:hover {
-  background: #fa9751;
-  color: #fff;
-  box-shadow: 3px 3px 0 #af4a01;
-  transform: translate(-1px, -1px);
-}
-
-/* Verfeinerter Pixel-Übergang 
-header::after {
-  content: "";
-  position: absolute;
-  bottom: -24px;
-  left: 0;
-  width: 100%;
-  height: 24px;
-  background:
-    linear-gradient(
-      to bottom,
-      #f7a8a8 0%,
-      #f7a8a8 40%,
-      #f1baba 40%,
-      #f1baba 70%,
-      #f9f4f4 70%,
-      #f9f4f4 100%
-    );
-   Pixel-Stufen mit feineren Zacken 
-  clip-path: polygon(
-    0% 0%, 
-    5% 20%, 10% 50%, 15% 30%, 20% 60%, 
-    25% 40%, 30% 80%, 35% 50%, 40% 90%, 
-    45% 60%, 50% 100%, 55% 70%, 60% 100%, 
-    65% 80%, 70% 100%, 75% 90%, 80% 100%, 
-    85% 95%, 90% 100%, 95% 98%, 100% 100%, 
-    100% 0%
-  );
-  image-rendering: pixelated;
-  z-index: 1; */
-
-
-
+  /* Hover Effekt */
+  .nav a:hover {
+    background: #fa9751;
+    color: #fff;
+    box-shadow: 3px 3px 0 #af4a01;
+    transform: translate(-1px, -1px);
+  }
 </style>
-
