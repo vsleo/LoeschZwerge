@@ -2,4 +2,4 @@
   <div>github actions test</div>
 </template>
 
-<script></script>
+<script setup></script>
