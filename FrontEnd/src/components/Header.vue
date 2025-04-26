@@ -1,20 +1,47 @@
----
-
----
-
-<header>
+<template>
+    <header>
   <div class="headline">
     <a href="/LoeschZwerge/">
-      <img src={`images/Loeschzwerge_Logo_lightblue.svg`} alt="Logo" /></a
+      <img src=images/Loeschzwerge_Logo_lightblue.svg alt="Logo" /></a
     >
   </div>
   <div class="nav">
     <nav>
-      <a href="/LoeschZwerge/car">Feuerwehrauto</a>
-      <a href="/LoeschZwerge/aboutUs"> About us</a>
+      <a href="/LoeschZwerge/car" :class="{ active: currentPath === '/LoeschZwerge/car' }">Feuerwehrauto</a>
+      <a href="/LoeschZwerge/about" :class="{ active: currentPath === '/LoeschZwerge/about' }"> About us</a>
+      <div> {{ updatePath() }}</div>
     </nav>
   </div>
 </header>
+
+
+
+
+  
+</template>
+<script>
+
+export default {
+  name: "Header",
+  data() {
+    return {
+      currentPath: "", 
+    };
+  },
+  methods: {
+    // Methode zum Aktualisieren des aktuellen Pfads
+    updatePath() {
+      
+      console.log("Aktueller Pfad:", this.currentPath); // Debugging-Zwecke
+    },
+   
+  },
+  mounted() {
+    this.currentPath = window.location.pathname;
+    console.log(this.currentPath) // Initialer Aufruf, um den aktuellen Pfad zu setzen
+  },
+};
+</script>
 
 <style>
   .background {
@@ -40,6 +67,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Verhindert Überlauf */
+    
   }
 
   header::before {
@@ -73,8 +101,8 @@
     image-rendering: crisp-edges;
     z-index: 1;
     position: fixed;
-    top: 1vw; /* Abstand vom oberen Rand */
-    left: 1vw; /* Abstand vom linken Rand */
+    top: 2vw; /* Abstand vom oberen Rand */
+    left: 2vw; /* Abstand vom linken Rand */
   }
 
   .headline a:hover img {
@@ -85,7 +113,7 @@
   nav {
     position: fixed;
     top: 4vw; /* Positioniert die Navigation 80% vom oberen Rand */
-    height: 1vw;
+    height: 1vw; /* Abstand zwischen den Links */
 
     transform: translateX(-50%); /* Zentriert die Navigation */
     /* Vertikal zentriert (optional) */
@@ -93,8 +121,6 @@
 
   /* Navigation rechts daneben */
   .nav nav {
-    gap: 24px;
-    font-weight: 2vw;
     font-size: 1vw;
   }
 
@@ -102,18 +128,28 @@
   .nav a {
     color: #ffffff;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 0.5vw;
+    margin: 0.3vw;
     border-radius: 6px;
     height: 1vw;
+    
+    
 
-    transition: all 0.2s ease;
+    
   }
 
   /* Hover Effekt */
   .nav a:hover {
     background: #ffffff49;
     color: #fff;
-    box-shadow: 3px 3px 0 #ffffff34;
-    transform: translate(-1px, -1px);
+    font-size: larger;
+    
+  }
+
+  .nav a.active {
+    background: #ffffff28;
+    color: #fff;
+    font-size: larger;
+    
   }
 </style>

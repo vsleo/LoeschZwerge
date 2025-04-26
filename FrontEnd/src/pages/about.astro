@@ -1,10 +1,10 @@
 ---
-import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import About_Us from "../components/AboutUs.astro";
+import Header from "../components/Header.vue";
 ---
 
 <Layout>
-    <Header />
-    <About_Us />
+  <Header client:load />
+  <About_Us />
 </Layout>

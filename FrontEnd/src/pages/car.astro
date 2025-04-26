@@ -1,10 +1,10 @@
 ---
 import CarComponent from "../components/Car.astro";
-import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.vue";
 ---
 
 <Layout>
-  <Header />
+  <Header client:load />
   <CarComponent />
 </Layout>
