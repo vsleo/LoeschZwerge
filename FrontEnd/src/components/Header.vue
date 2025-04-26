@@ -44,13 +44,7 @@ export default {
 </script>
 
 <style>
-  .background {
-    background-image: url("images/header_schlauch.png");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
-  /* Grundlegendes Reset & Body */
+  
   body {
     margin: 0;
 
@@ -74,11 +68,11 @@ export default {
     content: "";
     inset: 0;
     position: fixed;
-    background-image: url("images/header_schlauch.png");
+    background-image: url("images/header_schlauch4.png");
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: 0; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
-    height: 10vw;
+    height: 8vw;
   }
 
   header > * {
@@ -148,6 +142,13 @@ export default {
 
   .nav a.active {
     background: #ffffff28;
+    color: #fff;
+    font-size: larger;
+    
+  }
+
+  .nav a.active:hover {
+    background: #ffffff49;
     color: #fff;
     font-size: larger;
     
