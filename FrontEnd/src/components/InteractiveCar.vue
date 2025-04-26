@@ -12,37 +12,49 @@
         href="/LoeschZwerge/"
         target="_blank"
         class="hotspot"
+<<<<<<< HEAD
         title="Rolltor 1"
         style="top: 42%; left: 47%; width: 14%; height: 20%"
+=======
+        title="RolltorTH"
+        style="top: 42%; left: 47%; width: 14%; height: 20%;"
+>>>>>>> refs/remotes/origin/main
       >
-        Rolltor 1
+        RolltorTH
       </a>
       <a
-        href="/LoeschZwerge/"
-        target="_blank"
+        href="/LoeschZwerge/rolltorAGT"
         class="hotspot"
+<<<<<<< HEAD
         title="Rolltor 2"
         style="top: 42%; left: 62%; width: 12.5%; height: 19%"
+=======
+        title="RolltorAGT"
+        style="top: 42%; left: 62%; width: 12.5%; height: 19%;"
+>>>>>>> refs/remotes/origin/main
       >
-        Rolltor 2
+        RolltorAGT
       </a>
       <a
-        href="/LoeschZwerge/"
-        target="_blank"
+        href="/LoeschZwerge/rolltorAT"        
         class="hotspot"
+<<<<<<< HEAD
         title="Rolltor 3"
         style="top: 42%; left: 75.7%; width: 13%; height: 20%"
+=======
+        title="RolltorAT"
+        style="top: 42%; left: 75.7%; width: 13%; height: 20%;"
+>>>>>>> refs/remotes/origin/main
       >
-        Rolltor 3
+        RolltorAT
       </a>
-      <a
-        href="/LoeschZwerge/"
-        target="_blank"
-        class="hotspot"
+      <a       
+        class="hotspot sirene-hotspot"
         title="Sirene"
         style="top: 36%; left: 9.5%; width: 2.3%; height: 2%"
       >
         Sirene
+        <!-- <img src="images/sirene.gif" alt="Sirene" class="sirene-gif" /> -->
       </a>
     </div>
   </div>
