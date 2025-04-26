@@ -13,7 +13,7 @@
         target="_blank"
         class="hotspot"
         title="Rolltor 1"
-        style="top: 42%; left: 47%; width: 14%; height: 20%;"
+        style="top: 42%; left: 47%; width: 14%; height: 20%"
       >
         Rolltor 1
       </a>
@@ -22,7 +22,7 @@
         target="_blank"
         class="hotspot"
         title="Rolltor 2"
-        style="top: 42%; left: 62%; width: 12.5%; height: 19%;"
+        style="top: 42%; left: 62%; width: 12.5%; height: 19%"
       >
         Rolltor 2
       </a>
@@ -31,7 +31,7 @@
         target="_blank"
         class="hotspot"
         title="Rolltor 3"
-        style="top: 42%; left: 75.7%; width: 13%; height: 20%;"
+        style="top: 42%; left: 75.7%; width: 13%; height: 20%"
       >
         Rolltor 3
       </a>
@@ -40,7 +40,7 @@
         target="_blank"
         class="hotspot"
         title="Sirene"
-        style="top: 36%; left: 9.5%; width: 2.3%; height: 2%;"
+        style="top: 36%; left: 9.5%; width: 2.3%; height: 2%"
       >
         Sirene
       </a>
@@ -61,7 +61,6 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1; /* Annäherung an dein SVG; ggf. anpassen */
-  background-color: lightgrey;
 }
 
 /* Das Bild füllt 100% des Containers */
@@ -94,4 +93,3 @@
   border-color: darkred;
 }
 </style>
-
