@@ -9,40 +9,36 @@
 
       <!-- Sichtbarer Hotspot (prozentual positioniert) -->
       <a
-        href="/LoeschZwerge/"
-        target="_blank"
+        href="/LoeschZwerge/rolltorTH"
         class="hotspot"
-        title="Rolltor 1"
+        title="RolltorTH"
         style="top: 42%; left: 47%; width: 14%; height: 20%;"
       >
-        Rolltor 1
+        RolltorTH
       </a>
       <a
-        href="/LoeschZwerge/"
-        target="_blank"
+        href="/LoeschZwerge/rolltorAGT"
         class="hotspot"
-        title="Rolltor 2"
+        title="RolltorAGT"
         style="top: 42%; left: 62%; width: 12.5%; height: 19%;"
       >
-        Rolltor 2
+        RolltorAGT
       </a>
       <a
-        href="/LoeschZwerge/"
-        target="_blank"
+        href="/LoeschZwerge/rolltorAT"        
         class="hotspot"
-        title="Rolltor 3"
+        title="RolltorAT"
         style="top: 42%; left: 75.7%; width: 13%; height: 20%;"
       >
-        Rolltor 3
+        RolltorAT
       </a>
-      <a
-        href="/LoeschZwerge/"
-        target="_blank"
-        class="hotspot"
+      <a       
+        class="hotspot sirene-hotspot"
         title="Sirene"
         style="top: 36%; left: 9.5%; width: 2.3%; height: 2%;"
       >
         Sirene
+        <!-- <img src="images/sirene.gif" alt="Sirene" class="sirene-gif" /> -->
       </a>
     </div>
   </div>
