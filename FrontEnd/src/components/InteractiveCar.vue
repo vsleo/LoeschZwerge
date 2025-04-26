@@ -11,7 +11,6 @@
       <a
         href="/LoeschZwerge/rolltorTH"
         class="hotspot"
-        title="RolltorTH"
         style="top: 42%; left: 47%; width: 14%; height: 20%"
       >
         RolltorTH
@@ -19,26 +18,23 @@
       <a
         href="/LoeschZwerge/rolltorAGT"
         class="hotspot"
-        title="RolltorAGT"
         style="top: 42%; left: 62%; width: 12.5%; height: 19%"
       >
         RolltorAGT
       </a>
       <a
-        href="/LoeschZwerge/rolltorAT"
+        href="/LoeschZwerge/rolltorAT"        
         class="hotspot"
-        title="RolltorAT"
         style="top: 42%; left: 75.7%; width: 13%; height: 20%"
       >
         RolltorAT
       </a>
-      <a
+      <a       
         class="hotspot sirene-hotspot"
-        title="Sirene"
-        style="top: 36%; left: 9.5%; width: 2.3%; height: 2%"
+        style="top: 36.2%; left: 9.7%; width: 2.3%; height: 1.9%"
       >
         Sirene
-        <!-- <img src="images/sirene.gif" alt="Sirene" class="sirene-gif" /> -->
+        <img src="images/Sirene-Animation.gif" alt="Sirene" class="sirene-gif" />
       </a>
     </div>
   </div>
@@ -70,9 +66,9 @@
 /* Hotspot-Boxen */
 .hotspot {
   position: absolute;
-  border: 2px solid red;
-  background-color: rgba(255, 0, 0, 0.2);
-  color: black;
+  background-color: transparent; /* Keine Farbe */
+  border: none; /* Kein Rahmen */
+  color: transparent; /* Text unsichtbar */
   font-size: 12px;
   text-align: center;
   text-decoration: none;
@@ -84,8 +80,21 @@
   transition: all 0.2s ease;
 }
 
-.hotspot:hover {
-  background-color: rgba(255, 0, 0, 0.4);
-  border-color: darkred;
+.sirene-hotspot .sirene-gif {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  object-fit: contain;
+  display: none; /* Anfangs unsichtbar */
+  pointer-events: none;
+  z-index: 20;
+}
+
+
+
+.sirene-hotspot:hover .sirene-gif {
+  display: block;
 }
 </style>
