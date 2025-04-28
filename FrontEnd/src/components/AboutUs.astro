@@ -1,0 +1,72 @@
+---
+
+---
+
+<div class="coorporation">
+  <div class="text-container">
+    <div class="text-box">
+      <p>
+        Diese Website ist ein Studentenprojekt aus dem Studiengang Praktische
+        Informatik an der htw saar.<br />
+        Klicke auf das Logo um die Startseite der htw zu erreichen.
+      </p>
+    </div>
+  </div>
+  <div class="image-container">
+    <a href="https://www.htwsaar.de/" target="blank">
+      <img
+        alt="Logo der htwsaar"
+        title="Logo der htwsaar"
+        class="site-logo"
+        src="https://www.htwsaar.de/@@site-logo/logo.png" 
+      />
+    </a>
+  </div>
+</div>
+
+<style>
+  .coorporation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1.5vw;
+  }
+
+  .text-container {
+    width: 50%;
+    margin-left: 5vw;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(0.5rem, 1vw, 1vw);
+    font-weight: 700;
+    color: black;
+  }
+
+  .text-box {
+    background-color: #d9dadb;
+    padding: 1vw;
+    border-radius: 1vw;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.01);
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .image-container {
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 40%;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    transform: translate(-2vw);
+  }
+
+  img {
+    width: 35vw;
+  }
+
+  .image-container a:hover img {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+</style>

@@ -1,10 +1,14 @@
 ---
 import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
 ---
 
 <div id="container">
-  <img class="background" src={background.src} alt="" fetchpriority="high" />
+  <img
+    class="backgroundeffect"
+    src="images/background.svg"
+    alt=""
+    fetchpriority="high"
+  />
   <main>
     <section id="hero">
       <a href="https://astro.build"
@@ -50,7 +54,7 @@ import background from "../assets/background.svg";
 </div>
 
 <style>
-  .background {
+  .backgroundeffect {
     position: fixed;
     top: 0;
     left: 0;
