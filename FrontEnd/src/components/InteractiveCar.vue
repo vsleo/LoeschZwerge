@@ -9,7 +9,7 @@
 
       <!-- Sichtbarer Hotspot (prozentual positioniert) -->
       <a
-        href="/LoeschZwerge/rolltorTH"
+        href="/LoeschZwerge/g1"
         class="hotspot"
         style="top: 42%; left: 47%; width: 14%; height: 20%"
       >
@@ -23,18 +23,22 @@
         RolltorAGT
       </a>
       <a
-        href="/LoeschZwerge/rolltorAT"        
+        href="/LoeschZwerge/rolltorAT"
         class="hotspot"
         style="top: 42%; left: 75.7%; width: 13%; height: 20%"
       >
         RolltorAT
       </a>
-      <a       
+      <a
         class="hotspot sirene-hotspot"
         style="top: 36.2%; left: 9.7%; width: 2.3%; height: 1.9%"
       >
         Sirene
-        <img src="images/Sirene-Animation.gif" alt="Sirene" class="sirene-gif" />
+        <img
+          src="images/Sirene-Animation.gif"
+          alt="Sirene"
+          class="sirene-gif"
+        />
       </a>
     </div>
   </div>
@@ -91,8 +95,6 @@
   pointer-events: none;
   z-index: 20;
 }
-
-
 
 .sirene-hotspot:hover .sirene-gif {
   display: block;
