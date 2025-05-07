@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  lint:
+  Actions:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,3 +32,11 @@ jobs:
 
       - name: Prettier ausführen
         run: cd FrontEnd && npm run prettier
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        run: cd FrontEnd
+          npm run build
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "erwinholzhauser.eh@gmail.com"
+          npm run deploy
