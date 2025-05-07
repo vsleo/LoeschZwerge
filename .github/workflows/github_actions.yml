@@ -34,4 +34,4 @@ jobs:
         run: cd FrontEnd && npm run prettier
 
       - name: Deploy to GitHub Pages
-        run: git config --global user.email "erwinholzhauser.eh@gmail.com" && git config --global user.name "Erwin Holzhauser" && cd FrontEnd && npm run deploy
+        run: git config --global user.email "erwinholzhauser.eh@gmail.com" && git config --global user.name "ErwinHlz" && cd FrontEnd && npm run deploy
