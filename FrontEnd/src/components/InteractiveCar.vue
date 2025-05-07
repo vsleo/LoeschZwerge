@@ -16,7 +16,7 @@
         RolltorTH
       </a>
       <a
-        href="/LoeschZwerge/rolltorAGT"
+        href="/LoeschZwerge/g3"
         class="hotspot"
         style="top: 42%; left: 62%; width: 12.5%; height: 19%"
       >

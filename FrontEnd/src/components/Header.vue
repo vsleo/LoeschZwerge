@@ -71,13 +71,13 @@ header::before {
   position: fixed;
   background-size: cover;
   opacity: 0.9;
-  z-index: 0; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
+  z-index: 5; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
   height: 8vw;
 }
 
 header > * {
   position: relative;
-  z-index: 1; /* Stellt sicher, dass der Inhalt über dem Hintergrundbild liegt */
+  z-index: 6; /* Stellt sicher, dass der Inhalt über dem Hintergrundbild liegt */
 }
 
 /* Logo links oben fixieren */
