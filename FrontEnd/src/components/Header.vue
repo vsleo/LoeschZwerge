@@ -9,12 +9,15 @@
       <nav>
         <a
           href="/LoeschZwerge/car"
-          :class="{ active: currentPath === '/LoeschZwerge/car' }"
-          >Feuerwehrauto</a
+          :class="{ active: currentPath === '/car' || currentPath === '/car/' }"
+        >
+          Feuerwehrauto</a
         >
         <a
           href="/LoeschZwerge/about"
-          :class="{ active: currentPath === '/LoeschZwerge/about' }"
+          :class="{
+            active: currentPath === '/about' || currentPath === '/about/',
+          }"
         >
           About us</a
         >
@@ -32,8 +35,9 @@ export default {
   },
   methods: {},
   mounted() {
-    const base = import.meta.env.BASE_URL;
-    this.currentPath = window.location.pathname.replace(base, "/");
+    const base = "/LoeschZwerge";
+    this.currentPath = window.location.pathname.replace(base, "");
+    console.log(this.currentPath);
   },
 };
 </script>
