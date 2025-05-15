@@ -33,5 +33,16 @@ jobs:
       - name: Prettier ausführen
         run: cd FrontEnd && npm run prettier
 
+      - name: build
+        run: cd FrontEnd && npm run build
+
       - name: Deploy to GitHub Pages
-        run: git config --global user.email "erwinholzhauser.eh@gmail.com" && git config --global user.name "ErwinHlz" && cd FrontEnd && npm run deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./FrontEnd/dist
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "Deploy to GitHub Pages"
+          user_name: "ErwinHlz"
+          user_email: "erwinholzhauser.eh@gmail.com"

@@ -6,6 +6,7 @@ import vue from "@astrojs/vue";
 export default defineConfig({
   site: "https://vsleo.github.io",
   base: "/LoeschZwerge/",
+  outDir: "./dist",
 
   integrations: [vue()],
 });
