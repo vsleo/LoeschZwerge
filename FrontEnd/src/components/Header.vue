@@ -32,7 +32,8 @@ export default {
   },
   methods: {},
   mounted() {
-    this.currentPath = window.location.pathname;
+    const base = import.meta.env.BASE_URL;
+    this.currentPath = window.location.pathname.replace(base, "/");
   },
 };
 </script>
