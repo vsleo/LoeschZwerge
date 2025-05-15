@@ -14,7 +14,7 @@
         </div>
 
         <div v-if="item.visibility" class="item">
-          <img :src="item.picture" />
+          <img :src="item.picture" :alt="item.source" />
         </div>
         <div v-if="item.visibility" class="beschreibung">
           <div class="text">
@@ -34,17 +34,43 @@ export default {
     return {
       items: [
         {
-          name: "LED-Beleuchtungsgerät Peli mit Akku",
-          description: "Akkubetriebenes, tragbares LED-Gerät zur Ausleuchtung.",
+          name: "2x Atemschutzgeräte Sicherheitstrupp + Maske und Brandschutzhaube",
+          description: "Umluftunabhängiges Atemschutzgerät, kurz auch PA für Pressluftatmer. Der Vorrat an Atemluft beträgt ca. 1600 Liter, welche in der 6 Liter großen Druckluftflasche bei 300 bar vorliegen. Der Atemluftvorrat entspricht ca. 30 Minuten Einsatzzeit.",
           visibility: false,
-          picture: "images/LED-Beleuchtungsgerät_Peli_mit_Akku.jpg",
+          picture: "images/Atemschutzgerät_Beschreibung.jpg",
+          source: "https://feuerwehr-taufkirchen.de/neue-technik-fuer-atemschutzgeraete/",
         },
         {
-          name: "Rüstholz",
+          name: "Zelt",
           description:
-            "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
+            "Das Zelt ist eine Zusatzbeladung, welche das Umkleiden für Einsatzkräfte nach einem Brandeinsatz unter Atemschutz angenehmer gestalten soll",
           visibility: false,
-          picture: "images/Rüstholz.jpg",
+          picture: "images/Toataltet00_cb687228-b1b4-4fbb-a627-c4f16a8a8fa1.webp",
+          source:"https://mylar.se/de/products/toataltet",
+        },
+        {
+          name: "Ersatzkleidung",
+          description:
+            "Die Ersatzkleidung wird nach einem Brandeinsatz angezogen, um die Dekontamination durch den Brandrauch zu begrenzen. Dieses Vorgehen ist ein essentieller Teil des Hygienschutzkonzepts.",
+          visibility: false,
+          picture: "",
+          source:"",
+        },
+        {
+          name: "",
+          description:
+            "",
+          visibility: false,
+          picture: "",
+          source:"",
+        },
+        {
+          name: "",
+          description:
+            "",
+          visibility: false,
+          picture: "",
+          source:"",
         },
       ],
     };
