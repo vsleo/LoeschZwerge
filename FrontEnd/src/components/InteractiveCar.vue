@@ -23,7 +23,7 @@
         RolltorAGT
       </a>
       <a
-        href="/LoeschZwerge/rolltorAT"
+        href="/LoeschZwerge/g5"
         class="hotspot"
         style="top: 42%; left: 75.7%; width: 13%; height: 20%"
       >

@@ -30,6 +30,7 @@
   border-radius: 2vw;
   z-index: 3;
   color: black;
+  font-size: 1vw;
 }
 li {
   cursor: pointer;
@@ -87,6 +88,8 @@ li {
   /*object-fit: cover;*/
   text-align: justify;
   margin-left: 1vw;
+  font-size: 1vw;
+  hyphens: auto;
 }
 
 ul {

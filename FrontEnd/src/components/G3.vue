@@ -1,6 +1,6 @@
 <template>
   <div class="full-img">
-    <img src="images/Geräteraum_G3.jpg" />
+    <img src="images/Geräteraum_G3.png" />
   </div>
 
   <div class="liste">
@@ -57,7 +57,15 @@ export default {
           source:"",
         },
         {
-          name: "",
+          name: "Sicherheitstrupptasche",
+          description:
+            "Die Sicherheitstasche beinhaltet eine 6 Liter Atemluftflasche, sowie eine Haube, welche per Lungenautomat mit der Atemluftflasche verbunden werden kann. Mit Hilfe dieser Notfalltasche wird die Rettung durch verrauchte Bereiche ermöglicht und die Rettung eines verunfallten Atemschutzgeräteträger erleichtert.",
+          visibility: false,
+          picture: "images/Sicherheitstrupptasche.jpg",
+          source:"https://www.rescue-tec.de/taschen/feuerwehr/rescue-tec-sicherheitstrupptasche-rit-bag-fuer-6-liter-atemluftflaschen",
+        },
+        {
+          name: "Eurokraft Mehrzweckwanne",
           description:
             "",
           visibility: false,
@@ -65,7 +73,7 @@ export default {
           source:"",
         },
         {
-          name: "",
+          name: "Zubehör Mehrzweckzug",
           description:
             "",
           visibility: false,
