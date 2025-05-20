@@ -21,6 +21,14 @@
         >
           About us</a
         >
+        <a
+          href="/LoeschZwerge/quiz"
+          :class="{
+            active: currentPath === '/quiz' || currentPath === '/quiz/',
+          }"
+        >
+          Quiz</a
+        >
       </nav>
     </div>
   </header>
