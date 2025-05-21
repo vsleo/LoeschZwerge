@@ -1,6 +1,6 @@
 <template>
   <div class="full-img">
-    <img src="images/Geräteraum_G3.jpg" />
+    <img src="images/Rolltore/G1/Geräteraum_G1.jpg" />
   </div>
 
   <div class="liste">
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import "../styles/rolltor.css";
+import "../../../styles/rolltor.css";
 export default {
   name: "G1",
   data() {
@@ -44,7 +44,7 @@ export default {
           description:
             "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
           visibility: false,
-          picture: "images/Rüstholz.jpg",
+          picture: "images/Rolltore/G1/Rüstholz.jpg",
         },
       ],
     };

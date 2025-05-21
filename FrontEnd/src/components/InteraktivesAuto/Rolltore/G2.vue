@@ -1,6 +1,6 @@
 <template>
   <div class="full-img">
-    <img src="images/Geräteraum_G1.jpg" />
+    <img src="images/Geräteraum_G3.jpg" />
   </div>
 
   <div class="liste">
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import "../styles/rolltor.css";
+import "../../../styles/rolltor.css";
 export default {
   name: "G1",
   data() {

@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import "../styles/rolltor.css";
+import "../../../styles/rolltor.css";
 export default {
   name: "G1",
   data() {
