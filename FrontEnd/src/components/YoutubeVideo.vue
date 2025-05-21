@@ -3,7 +3,7 @@
     <iframe
       width="560"
       height="315"
-      :src="youtubeEmbedUrl"
+      :src="youtubeEmbedUrl + '?rel=0'"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; clipboard-write;  gyroscope; picture-in-picture"
@@ -30,16 +30,15 @@ export default {
 
 <style scoped>
 .video-container {
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+  width: 50vw;
+  max-width: 50vw; /* optional */
+  aspect-ratio: 16 / 9;
 }
 
 .video-container iframe {
-  position: fixed;
-  justify-content: center;
-  top: 15vw;
-  transform: translate(20%, 0%);
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
 }
 </style>
