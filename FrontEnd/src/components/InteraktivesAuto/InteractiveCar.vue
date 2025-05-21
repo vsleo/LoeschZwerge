@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="image-wrapper">
     <div class="image-container">
       <img
@@ -7,7 +7,7 @@
         class="firetruck"
       />
 
-      <!-- Sichtbarer Hotspot (prozentual positioniert) -->
+      <!-- Sichtbarer Hotspot (prozentual positioniert)
       <a
         href="/LoeschZwerge/g1"
         class="hotspot"
@@ -42,7 +42,78 @@
       </a>
     </div>
   </div>
+</template> -->
+
+<template>
+  <div class="image-wrapper">
+    <div class="image-container">
+      <img
+        :src="svgs[currentIndex].image"
+        alt="Feuerwehrauto"
+        class="firetruck"
+      />
+
+      <a
+        v-for="(hotspot, index) in svgs[currentIndex].hotspots"
+        :key="index"
+        class="hotspot"
+        :href="hotspot.href"
+        :style="{
+          top: hotspot.top,
+          left: hotspot.left,
+          width: hotspot.width,
+          height: hotspot.height,
+        }"
+      >
+        {{ hotspot.label }}
+      </a>
+
+
+    </div>
+          <!-- Navigation -->
+          <button class="nav-button left" @click="prev">
+        <img src="images/arrow_left.png"/>
+      </button>
+      <button class="nav-button right" @click="next">
+        <img src="images/arrow_right.png"/>
+      </button>
+  </div>
 </template>
+
+
+<script setup>
+import { ref } from "vue";
+
+const currentIndex = ref(0);
+
+const svgs = [
+  {
+    image: "images/Feuerwehrauto-LF10.svg",
+    hotspots: [
+      { top: "42%", left: "47%", width: "14%", height: "20%", href: "/LoeschZwerge/g1", label: "RolltorTH" },
+      { top: "42%", left: "62%", width: "12.5%", height: "19%", href: "/LoeschZwerge/g3", label: "RolltorAGT" },
+      { top: "42%", left: "75.7%", width: "13%", height: "20%", href: "/LoeschZwerge/g5", label: "RolltorAT" },
+    ]
+  },
+  {
+    image: "images/Feuerwehrauto-LF10-mirrored.svg",
+    hotspots: [
+      { top: "42%", left: "47%", width: "14%", height: "20%", href: "/LoeschZwerge/g1", label: "RolltorTH" },
+      { top: "42%", left: "62%", width: "12.5%", height: "19%", href: "/LoeschZwerge/g3", label: "RolltorAGT" },
+      { top: "42%", left: "75.7%", width: "13%", height: "20%", href: "/LoeschZwerge/g5", label: "RolltorAT" },
+    ]
+  }
+];
+
+function prev() {
+  currentIndex.value = (currentIndex.value - 1 + svgs.length) % svgs.length;
+}
+
+function next() {
+  currentIndex.value = (currentIndex.value + 1) % svgs.length;
+}
+</script>
+
 
 <style scoped>
 .image-wrapper {
@@ -98,5 +169,25 @@
 
 .sirene-hotspot:hover .sirene-gif {
   display: block;
+}
+
+
+.nav-button {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.left {
+  left: 5%;
+}
+
+.right {
+  right: 5%;
 }
 </style>
