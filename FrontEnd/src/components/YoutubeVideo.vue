@@ -38,7 +38,7 @@ export default {
   position: fixed;
   justify-content: center;
   top: 15vw;
-  transform: translate(50%, 0%);
+  transform: translate(20%, 0%);
   width: 50%;
   height: 50%;
 }

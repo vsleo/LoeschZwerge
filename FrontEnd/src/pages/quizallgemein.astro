@@ -1,0 +1,11 @@
+---
+import Header from "../components/Header.vue";
+import Layout from "../layouts/Layout.astro";
+import Quiz from "../components/Quiz_Allgemein.vue";
+
+---
+
+<Layout>
+  <Header />
+  <Quiz client:load/>
+</Layout>
