@@ -29,6 +29,15 @@
         >
           Quiz</a
         >
+        <a
+          href="/LoeschZwerge/brandschutz"
+          :class="{
+            active:
+              currentPath === '/brandschutz' || currentPath === '/brandschutz/',
+          }"
+        >
+          Brandschutz</a
+        >
       </nav>
     </div>
   </header>
