@@ -96,13 +96,16 @@ const svgs = [
     ]
   },
   {
+    image: "images/Feuerwehrauto-LF10-rear.png",
+  },
+  {
     image: "images/Feuerwehrauto-LF10-mirrored.svg",
     hotspots: [
-      { top: "42%", left: "47%", width: "14%", height: "20%", href: "/LoeschZwerge/g1", label: "RolltorTH" },
-      { top: "42%", left: "62%", width: "12.5%", height: "19%", href: "/LoeschZwerge/g3", label: "RolltorAGT" },
-      { top: "42%", left: "75.7%", width: "13%", height: "20%", href: "/LoeschZwerge/g5", label: "RolltorAT" },
+      { top: "42%", left: "53%", width: "14%", height: "20%", href: "/LoeschZwerge/g1", label: "Rolltor Stromversorgung" },
+      { top: "42%", left: "38%", width: "12.5%", height: "19%", href: "/LoeschZwerge/g3", label: "Rolltor Wasserführende Armaturen" },
+      { top: "42%", left: "24.3%", width: "13%", height: "20%", href: "/LoeschZwerge/g5", label: "Rolltor Schlaucmaterial" },
     ]
-  }
+  },
 ];
 
 function prev() {
@@ -117,7 +120,8 @@ function next() {
 
 <style scoped>
 .image-wrapper {
-  max-width: 800px;
+  max-width: 1000px;
+  max-height: 300px;
   margin: 0 auto;
   padding-left: 1.5vw;
   padding-bottom: 3vw;
@@ -173,8 +177,6 @@ function next() {
 
 
 .nav-button {
-  width: 10%;
-  height: 10%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
