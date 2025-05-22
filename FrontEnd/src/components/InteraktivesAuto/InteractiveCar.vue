@@ -84,26 +84,29 @@
 <script setup>
 import { ref } from "vue";
 
-const currentIndex = ref(0);
+const currentIndex = ref(2);
 
 const svgs = [
   {
-    image: "images/Feuerwehrauto-LF10.svg",
+    image: "images/LF-10/Feuerwehrauto-LF10-left.png",
     hotspots: [
-      { top: "42%", left: "47%", width: "14%", height: "20%", href: "/LoeschZwerge/g1", label: "RolltorTH" },
-      { top: "42%", left: "62%", width: "12.5%", height: "19%", href: "/LoeschZwerge/g3", label: "RolltorAGT" },
-      { top: "42%", left: "75.7%", width: "13%", height: "20%", href: "/LoeschZwerge/g5", label: "RolltorAT" },
+      { top: "35%", left: "48.5%", width: "16.8%", height: "24.5%", href: "/LoeschZwerge/g1", label: "RolltorTH" },
+      { top: "35%", left: "66%", width: "15.3%", height: "22.6%", href: "/LoeschZwerge/g3", label: "RolltorAGT" },
+      { top: "35%", left: "82%", width: "16%", height: "24.5%", href: "/LoeschZwerge/g5", label: "RolltorAT" },
     ]
   },
   {
-    image: "images/Feuerwehrauto-LF10-rear.png",
+    image: "images/LF-10/Feuerwehrauto-LF10-rear.png",
+    hotspots: [
+      { top: "33%", left: "42.4%", width: "15.3%", height: "26%", href: "/LoeschZwerge/gr", label: "Rolltor Pumpe" }
+    ]
   },
   {
-    image: "images/Feuerwehrauto-LF10-mirrored.svg",
+    image: "images/LF-10/Feuerwehrauto-LF10-right.png",
     hotspots: [
-      { top: "42%", left: "53%", width: "14%", height: "20%", href: "/LoeschZwerge/g1", label: "Rolltor Stromversorgung" },
-      { top: "42%", left: "38%", width: "12.5%", height: "19%", href: "/LoeschZwerge/g3", label: "Rolltor Wasserführende Armaturen" },
-      { top: "42%", left: "24.3%", width: "13%", height: "20%", href: "/LoeschZwerge/g5", label: "Rolltor Schlaucmaterial" },
+      { top: "35%", left: "34.7%", width: "16.8%", height: "24.5%", href: "/LoeschZwerge/g2", label: "Rolltor Stromversorgung" },
+      { top: "35%", left: "18.7%", width: "15.3%", height: "22.6%", href: "/LoeschZwerge/g4", label: "Rolltor Wasserführende Armaturen" },
+      { top: "35%", left: "2%", width: "16%", height: "24.5%", href: "/LoeschZwerge/g6", label: "Rolltor Schlauchmaterial" },
     ]
   },
 ];
@@ -121,10 +124,7 @@ function next() {
 <style scoped>
 .image-wrapper {
   max-width: 1000px;
-  max-height: 300px;
   margin: 0 auto;
-  padding-left: 1.5vw;
-  padding-bottom: 3vw;
 }
 
 /* Container mit relative Position & Responsive Verhalten */
