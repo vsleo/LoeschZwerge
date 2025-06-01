@@ -4,34 +4,45 @@
   </div>
 
   <div class="liste">
-    <ul v-for="(item, index) in items" :key="index">
-      <li>
-        <div
-          :class="{ isActive: item.visibility }"
-          @click="toggleVisibility(index)"
+    <ul>
+      <li v-for="(item, index) in items" :key="index">
+        <div 
+        :class="{ isActive: item.visibility }" 
+        @click="selectItem(index)"
         >
           ° {{ item.name }}
         </div>
-
-        <div v-if="item.visibility" class="item">
-          <img :src="item.picture" :alt="item.source" />
-        </div>
-        <div v-if="item.visibility" class="beschreibung">
-          <div class="text">
-            <p>{{ item.description }}</p>
-          </div>
-        </div>
       </li>
     </ul>
+  </div>
+
+  <!-- Bild-Box mit Fallback-Link -->
+  <div class="item" v-if="activeItem">
+    <template v-if="activeItem.picture && activeItem.picture.length > 0">
+      <img :src="activeItem.picture" :alt="activeItem.source" />
+    </template>
+    <template v-else-if="activeItem.source && activeItem.source.length > 0">
+  <div class="fallback-link">
+    {{ activeItem.source }}
+  </div>
+</template>
+  </div>
+
+  <!-- Feste Beschreibung-Box -->
+  <div v-if="activeItem && activeItem.description" class="beschreibung">
+    <div class="text">
+      <p>{{ activeItem.description }}</p>
+    </div>
   </div>
 </template>
 
 <script>
 import "../../../styles/rolltor.css";
 export default {
-  name: "G1",
+  name: "G3View",
   data() {
     return {
+      activeIndex: null,
       items: [
         {
           name: "2x Atemschutzgeräte Sicherheitstrupp + Maske und Brandschutzhaube",
@@ -54,7 +65,7 @@ export default {
             "Die Ersatzkleidung wird nach einem Brandeinsatz angezogen, um die Dekontamination durch den Brandrauch zu begrenzen. Dieses Vorgehen ist ein essentieller Teil des Hygienschutzkonzepts.",
           visibility: false,
           picture: "",
-          source:"",
+          source:"adad",
         },
         {
           name: "Sicherheitstrupptasche",
@@ -83,14 +94,14 @@ export default {
       ],
     };
   },
+  computed: {
+    activeItem() {
+      return this.activeIndex !== null ? this.items[this.activeIndex] : null;
+    },
+  },
   methods: {
-    toggleVisibility(index) {
-      this.items.forEach((item, i) => {
-        if (i !== index) {
-          item.visibility = false;
-        }
-      });
-      this.items[index].visibility = !this.items[index].visibility;
+    selectItem(index) {
+      this.activeIndex = this.activeIndex === index ? null : index;
     },
   },
 };

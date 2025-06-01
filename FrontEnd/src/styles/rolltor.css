@@ -41,7 +41,7 @@
 li {
   cursor: pointer;
   padding: 0.5vw;
-  display: flex;
+  
   align-items: center;
   position: relative;
   top: 0;
@@ -54,8 +54,9 @@ li {
   width: 30vw;
   height: 28vw;
   position: absolute;
-  top: 35vw;
-  left: -51vw;
+  top: 45vw;
+  left: 10vw;
+  bottom: -20vw;
   background-color: rgba(255, 255, 255, 0.552);
   border-radius: 2vw;
 
@@ -76,14 +77,13 @@ li {
 }
 
 .beschreibung {
-  width: 30vw;
+  width: 32vw;
   height: 28vw;
-  position: absolute;
-  top: 35vw;
-  left: -1vw;
+  top: 45vw;
+  left: 60vw;
   background-color: rgba(255, 255, 255, 0.552);
   border-radius: 2vw;
-
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
