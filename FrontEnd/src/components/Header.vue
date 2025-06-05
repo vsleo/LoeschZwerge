@@ -94,7 +94,7 @@ header::before {
   background-size: cover;
   opacity: 0.9;
   z-index: 5; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
-  height: 8vw;
+  height: 5vw;
 }
 
 header > * {
@@ -111,7 +111,8 @@ header > * {
 }
 
 header img {
-  height: 4vw;
+  height: 2.5vw;
+  margin-top: -1vw;
   min-height: 32px;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
   image-rendering: crisp-edges;
@@ -128,7 +129,7 @@ header img {
 
 nav {
   position: fixed;
-  top: 4vw; /* Positioniert die Navigation 80% vom oberen Rand */
+  top: 2vw; /* Positioniert die Navigation 80% vom oberen Rand */
   height: 1vw; /* Abstand zwischen den Links */
 
   transform: translateX(-50%); /* Zentriert die Navigation */
@@ -144,8 +145,8 @@ nav {
 .nav a {
   color: #ffffff;
   text-decoration: none;
-  padding: 0.5vw;
-  margin: 0.3vw;
+  padding: 0.3vw 0.5vw;
+  margin: 0.2vw;
   border-radius: 6px;
   height: 1vw;
 }
@@ -154,18 +155,17 @@ nav {
 .nav a:hover {
   background: #ffffff49;
   color: #fff;
-  font-size: larger;
 }
 
 .nav a.active {
   background: #ffffff28;
   color: #fff;
-  font-size: larger;
+  
 }
 
 .nav a.active:hover {
   background: #ffffff49;
   color: #fff;
-  font-size: larger;
+  
 }
 </style>
