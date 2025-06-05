@@ -48,13 +48,13 @@
   <div class="image-wrapper">
     <div class="image-container">
       <img
-        :src="svgs[currentIndex].image"
+        :src="images[currentIndex].image"
         alt="Feuerwehrauto"
         class="firetruck"
       />
 
       <a
-        v-for="(hotspot, index) in svgs[currentIndex].hotspots"
+        v-for="(hotspot, index) in images[currentIndex].hotspots"
         :key="index"
         class="hotspot"
         :href="hotspot.href"
@@ -84,9 +84,9 @@
 <script setup>
 import { ref } from "vue";
 
-const currentIndex = ref(2);
+const currentIndex = ref(0);
 
-const svgs = [
+const images = [
   {
     image: "images/LF-10/Feuerwehrauto-LF10-left.png",
     hotspots: [
@@ -109,14 +109,17 @@ const svgs = [
       { top: "35%", left: "2%", width: "16%", height: "24.5%", href: "/LoeschZwerge/g6", label: "Rolltor Schlauchmaterial" },
     ]
   },
+  {
+    image: "images/LF-10/Feuerwehrauto-LF10-front.png"
+  }
 ];
 
 function prev() {
-  currentIndex.value = (currentIndex.value - 1 + svgs.length) % svgs.length;
+  currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
 }
 
 function next() {
-  currentIndex.value = (currentIndex.value + 1) % svgs.length;
+  currentIndex.value = (currentIndex.value + 1) % images.length;
 }
 </script>
 
