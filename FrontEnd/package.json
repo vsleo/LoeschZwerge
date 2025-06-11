@@ -16,6 +16,7 @@
   "dependencies": {
     "@astrojs/vue": "^5.0.11",
     "astro": "^5.7.4",
+    "playwright": "^1.52.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "stylelint-config-standard-scss": "^14.0.0",

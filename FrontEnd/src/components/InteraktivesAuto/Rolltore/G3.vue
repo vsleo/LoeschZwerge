@@ -1,39 +1,41 @@
 <template>
-  <div class="full-img">
-    <img src="images/Rolltore/G3/Geräteraum_G3.png" />
-  </div>
+  <div class="full-section">
+    <div class="full-img">
+      <img src="images/Rolltore/G3/Geräteraum_G3.png" />
+    </div>
 
-  <div class="liste">
-    <ul>
-      <li v-for="(item, index) in items" :key="index">
-        <div 
-        :class="{ isActive: item.visibility }" 
-        @click="selectItem(index)"
-        >
-          ° {{ item.name }}
+    <div class="liste">
+      <ul>
+        <li v-for="(item, index) in items" :key="index">
+          <div 
+          :class="{ isActive: item.visibility }" 
+          @click="selectItem(index)"
+          >
+            ° {{ item.name }}
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bild-Box -->
+    <div class="item" v-if="activeItem">
+      <template v-if="activeItem.picture && activeItem.picture.length > 0">
+        <img :src="activeItem.picture" :alt="activeItem.source" />
+      </template>
+      <template v-else-if="activeItem.source && activeItem.source.length > 0">
+        <div class="fallback-link">
+          {{ activeItem.source }}
         </div>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Bild-Box mit Fallback-Link -->
-  <div class="item" v-if="activeItem">
-    <template v-if="activeItem.picture && activeItem.picture.length > 0">
-      <img :src="activeItem.picture" :alt="activeItem.source" />
-    </template>
-    <template v-else-if="activeItem.source && activeItem.source.length > 0">
-  <div class="fallback-link">
-    {{ activeItem.source }}
-  </div>
-</template>
-  </div>
-
-  <!-- Feste Beschreibung-Box -->
-  <div v-if="activeItem && activeItem.description" class="beschreibung">
-    <div class="text">
-      <p>{{ activeItem.description }}</p>
+      </template>
     </div>
   </div>
+
+    <!-- Feste Beschreibung-Box -->
+    <div v-if="activeItem && activeItem.description" class="beschreibung">
+      <div class="text">
+        <p>{{ activeItem.description }}</p>
+      </div>
+    </div>  
 </template>
 
 <script>
