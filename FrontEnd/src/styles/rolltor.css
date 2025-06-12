@@ -69,6 +69,7 @@ li {
   border: 2px solid #2c2c2c;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   background-color: white;
+  backface-visibility: hidden;
 }
 
 .beschreibung {
@@ -104,19 +105,17 @@ ul {
   color: blue;
 }
 
-.text {
+.front-img {
   width: 29vw;
   height: 27vw;
+  object-fit: contain;
   border-radius: 2vw;
   border: 2px solid #2c2c2c;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: lightgray;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .full-section {
@@ -126,6 +125,46 @@ ul {
   align-items: flex-start;
   gap: 1vw;
   margin: 10vw 2vw 0 2vw;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 29vw;
+  height: 27vw;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  border: 2px solid #2c2c2c;
+  border-radius: 2vw;
+  background-color: lightgray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Consolas', monospace;
+  font-weight: 700;
+  text-align: center;
+  padding: 1vw;
+  color: black;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 1vw;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 27vw;
+  height: 25vw;
+  backface-visibility: hidden;
 }
 
 

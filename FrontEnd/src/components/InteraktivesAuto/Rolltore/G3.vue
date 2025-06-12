@@ -20,24 +20,40 @@
     </div>
 
     <!-- Bild‑Box mit Fallback‑Logik -->
-    <div class="item">
-      <template v-if="activeItem && activeItem.picture">
-        <img :src="activeItem.picture" :alt="activeItem.source" />
-      </template>
-      <template v-else>
-        <div class="fallback-text">
-          Bitte wähle ein Element aus der Liste aus.
+    <div class="item" @click="toggleFlip" style="cursor: pointer;">
+      <div :class="['flip-card-inner', { flipped: isFlipped }]">
+      
+      <!-- Vorderseite -->
+        <div class="flip-card-front">
+          <template v-if="activeItem && activeItem.picture">
+            <img
+              :src="imageSrc"
+              :alt="activeItem.source"
+              @error="handleImageError"
+              class="front-img"
+            />
+          </template>
+          <template v-else>
+            <div class="fallback-text">
+              Bitte wähle ein Element aus der Liste aus.
+            </div>
+          </template>
         </div>
-      </template>
-    </div>
-  </div>
 
-  <!-- Feste Beschreibung‑Box -->
+        <!-- Rückseite -->
+        <div v-if="activeItem?.description" class="flip-card-back">
+          <p>{{ activeItem.description }}</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- Feste Beschreibung‑Box 
   <div v-if="activeItem && activeItem.description" class="beschreibung">
     <div class="text">
       <p>{{ activeItem.description }}</p>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -53,6 +69,7 @@ export default {
       imageErrored: false,
       // Absoluter Fallback‑Pfad
       fallbackImage: "images/Rolltore/G3/Geräteraum_G3.png",
+      isFlipped: false,
       // Daten für die einzelnen Geräte
       items: [
         {
@@ -129,18 +146,25 @@ export default {
     },
   },
   methods: {
-    // Auswahl umschalten
     selectItem(index) {
       this.activeIndex = this.activeIndex === index ? null : index;
-      // Bild‑Fehler zurücksetzen, wenn ein neues Item gewählt wird
       this.imageErrored = false;
+      this.isFlipped = false; // Flip zurücksetzen bei neuem Item
     },
-    // Wird ausgelöst, wenn das Bild nicht geladen werden kann
     handleImageError(event) {
       if (event.target.src !== this.fallbackImage) {
         this.imageErrored = true;
         event.target.src = this.fallbackImage;
       }
+    },
+    toggleFlip() {
+      console.log("activeItem:", this.activeItem);
+      console.log("Beschreibung:", this.activeItem?.description);
+      if (!this.activeItem || !this.activeItem.description) {
+        console.warn("Keine gültige Beschreibung vorhanden.");
+        return;
+      }
+      this.isFlipped = !this.isFlipped;
     },
   },
 };
