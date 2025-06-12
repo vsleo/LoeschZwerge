@@ -126,7 +126,7 @@ function next() {
 
 <style scoped>
 .image-wrapper {
-  max-width: 1000px;
+  max-width: 52vw;
   margin: 0 auto;
 }
 
@@ -134,7 +134,7 @@ function next() {
 .image-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1; /* Annäherung an dein SVG; ggf. anpassen */
+  aspect-ratio: 1 / 1;
 }
 
 /* Das Bild füllt 100% des Containers */
@@ -181,7 +181,7 @@ function next() {
 
 .nav-button {
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
