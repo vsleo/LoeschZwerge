@@ -46,14 +46,7 @@
         </div>
       </div>
     </div>
-</div>
-
-  <!-- Feste Beschreibung‑Box 
-  <div v-if="activeItem && activeItem.description" class="beschreibung">
-    <div class="text">
-      <p>{{ activeItem.description }}</p>
-    </div>
-  </div> -->
+  </div>
 </template>
 
 <script>
@@ -68,7 +61,7 @@ export default {
       // Wird true, sobald das Bild nicht geladen werden konnte
       imageErrored: false,
       // Absoluter Fallback‑Pfad
-      fallbackImage: "images/Rolltore/G3/Geräteraum_G3.png",
+      fallbackImage: "images/Rolltore/G3/Picture_Not_Found.png",
       isFlipped: false,
       // Daten für die einzelnen Geräte
       items: [
@@ -95,8 +88,8 @@ export default {
           description:
             "Die Ersatzkleidung wird nach einem Brandeinsatz angezogen, um die Dekontamination durch den Brandrauch zu begrenzen. Dieses Vorgehen ist ein essentieller Teil des Hygienschutzkonzepts.",
           visibility: false,
-          picture: "",
-          source: "adad",
+          picture: "images/Rolltore/G3/Ersatzkleidung.jpg",
+          source: "https://de.vecteezy.com/foto/3169819-kleiderstapel-auf-weissem-hintergrund",
         },
         {
           name: "Sicherheitstrupptasche",
@@ -109,17 +102,16 @@ export default {
         },
         {
           name: "Eurokraft Mehrzweckwanne",
-          description: "",
-          visibility: false,
-          picture: "",
-          source: "",
+          description: "Die Mehrzweckwanne hat verschiedene Einsatzmöglichkeiten, unter anderem als Auffangwanne für Kleingebinde, als Abfüllwanne oder als Transportwanne.",
+          picture: "images/Rolltore/G3/Mehrzweckwanne.jpg",
+          source: "https://www.amazon.de/eurokraft-basic-PE-Kleingebinde-Universalwanne-Volumen-stapelbar/dp/B0F3WS7K4H?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1P0IMYPPNRHIX",
         },
         {
           name: "Zubehör Mehrzweckzug",
-          description: "",
+          description: "Das Zubehör für den Mehrzweckzug ermöglicht eine flexible Handhabung und Anwendung in verschiedenen Einsatzszenarien. Das Zubehör umfasst unter anderem eine Umlenkrollen, Schäkel, Rundschlingen und weitere Komponenten, die eine effektive Nutzung des Mehrzweckzugs gewährleisten.",
           visibility: false,
-          picture: "",
-          source: "",
+          picture: "images/Rolltore/G3/Zubehör_Mehrzweckzug.jpg",
+          source: "https://www.btl-brandschutz.de/Mehrzweckzug-Satz-DIN-14800-MZ32-Greifzug-32-kN/710105",
         },
       ],
     };
