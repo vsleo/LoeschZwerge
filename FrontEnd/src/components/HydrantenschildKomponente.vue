@@ -176,16 +176,37 @@ export default {
           fontSize: "10px",
         },
       ],
-      values: [],
+      values: {
+        nenndurchmesser: 0,
+        richtungLinks: 0,
+        richtungRechts: 0,
+        richtungUnten: 0,
+      },
     };
   },
   methods: {
     createValues(index) {
+      // Immer nur die letzte Ziffer übernehmen
+      const val = this.hotspots[index].label;
+      if (val.length > 1) {
+        this.hotspots[index].label = val.slice(-1);
+      }
+
       if (/^[0-9]$/.test(this.hotspots[index].label)) {
+        // Links/Rechts gegenseitig leeren
+        if (index === 3 || index === 4) {
+          this.hotspots[5].label = "";
+          this.hotspots[6].label = "";
+          this.hotspots[11].label = "";
+        }
+        if (index === 5 || index === 6) {
+          this.hotspots[3].label = "";
+          this.hotspots[4].label = "";
+          this.hotspots[10].label = "";
+        }
+
         this.values.nenndurchmesser = Number(
-          `${this.hotspots[0].label}${
-            this.hotspots[1].label
-          }${this.hotspots[2].label}`,
+          `${this.hotspots[0].label}${this.hotspots[1].label}${this.hotspots[2].label}`,
         );
         const richtungLinks = `${this.hotspots[3].label}${this.hotspots[4].label}.${this.hotspots[10].label}`;
         this.values.richtungLinks = Number(richtungLinks);
@@ -196,8 +217,7 @@ export default {
 
         this.$emit("sendValues", this.values);
       } else {
-        alert("Bitte nur Ziffern eingeben!");
-        this.hotspots[index].label = ""; // Reset to default value
+        this.hotspots[index].label = "";
       }
     },
     clearOnFocus(index) {
