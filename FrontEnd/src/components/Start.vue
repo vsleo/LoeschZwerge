@@ -75,6 +75,7 @@ onMounted(() => {
 .heading {
     color: white;
     font-size: x-large;
+    font-family: Consolas, monospace;
 }
 
 .box {
@@ -89,6 +90,7 @@ onMounted(() => {
 .paragraph {
     color: white;
     font-size: x-large;
+    font-family: Consolas, monospace;
 }
 
 .image-slider {
