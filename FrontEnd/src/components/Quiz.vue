@@ -4,10 +4,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <div class="quiz-container">
@@ -50,7 +46,7 @@ export default {
 .quiz-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: flex-start;
+  flex-direction: row;
   justify-content: center;
   margin: 1vw;
   padding: 1vw;
