@@ -56,7 +56,6 @@
       {{ hoveredPosition.col }}
     </div>
   </div>
-  <button>Markiere korrekten Spot</button>
 </template>
 
 <script>

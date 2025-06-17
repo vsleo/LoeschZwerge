@@ -38,6 +38,14 @@
         >
           Brandschutz</a
         >
+        <a
+          href="/LoeschZwerge/hydrantdemo"
+          :class="{
+            active:
+              currentPath === '/hydrantdemo' || currentPath === '/hydrantdemo/',
+          }"
+          >Hydrantdemo</a
+        >
       </nav>
     </div>
   </header>
@@ -160,12 +168,10 @@ nav {
 .nav a.active {
   background: #ffffff28;
   color: #fff;
-  
 }
 
 .nav a.active:hover {
   background: #ffffff49;
   color: #fff;
-  
 }
 </style>
