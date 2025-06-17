@@ -26,9 +26,9 @@
             </div>
             <div>
                 <div class="image-slider">
-                    <img src="/images/slider-images/img-1.jpg" class="slide active" />
-                    <img src="/images/slider-images/img-2.jpg" class="slide" />
-                    <img src="/images/slider-images/img-3.jpg" class="slide" />
+                    <img src="images/slider-images/img-1.jpg" class="slide active" />
+                    <img src="images/slider-images/img-2.jpg" class="slide" />
+                    <img src="images/slider-images/img-3.jpg" class="slide" />
                 </div>
             </div>
         </div>
