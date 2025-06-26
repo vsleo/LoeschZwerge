@@ -1,0 +1,15 @@
+[
+    {
+        "name": "LED-Beleuchtungsgerät Peli mit Akku",
+        "description": "Akkubetriebenes, tragbares LED-Gerät zur Ausleuchtung.",
+        "visibility": false,
+        "picture": "images/LED-Beleuchtungsgerät_Peli_mit_Akku.jpg"
+    },
+    {
+        "name": "Rüstholz",
+        "description":
+        "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
+        "visibility": false,
+        "picture": "images/Rüstholz.jpg"
+    }
+]

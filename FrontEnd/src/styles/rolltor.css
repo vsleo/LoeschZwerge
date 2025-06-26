@@ -167,4 +167,24 @@ ul {
   backface-visibility: hidden;
 }
 
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14vw;
+  margin-top: 2vw;
+}
+
+.navigation-buttons a button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navigation-buttons a button:hover {
+  background-color: #0056b3;
+}
 

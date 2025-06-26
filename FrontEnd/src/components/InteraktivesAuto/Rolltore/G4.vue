@@ -1,63 +1,129 @@
 <template>
-  <div class="full-img">
-    <img src="images/Geräteraum_G3.jpg" />
-  </div>
+  <div class="full-section">
+    <!-- Übersichtsfoto der Geräteraumtür -->
+    <div class="full-img">
+      <img src="images/Rolltore/G3/Geräteraum_G3.png" />
+    </div>
 
-  <div class="liste">
-    <ul v-for="(item, index) in items" :key="index">
-      <li>
-        <div
-          :class="{ isActive: item.visibility }"
-          @click="toggleVisibility(index)"
-        >
-          ° {{ item.name }}
-        </div>
-
-        <div v-if="item.visibility" class="item">
-          <img :src="item.picture" />
-        </div>
-        <div v-if="item.visibility" class="beschreibung">
-          <div class="text">
-            <p>{{ item.description }}</p>
+    <!-- Liste mit klickbaren Einträgen -->
+    <div class="liste">
+      <ul>
+        <li v-for="(item, index) in items" :key="index">
+          <div
+            :class="{ isActive: index === activeIndex }"
+            @click="selectItem(index)"
+          >
+            ° {{ item.name }}
           </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bild‑Box mit Fallback‑Logik -->
+    <div class="item" @click="toggleFlip" style="cursor: pointer;">
+      <div :class="['flip-card-inner', { flipped: isFlipped }]">
+      
+      <!-- Vorderseite -->
+        <div class="flip-card-front">
+          <template v-if="activeItem && activeItem.picture">
+            <img
+              :src="imageSrc"
+              :alt="activeItem.source"
+              @error="handleImageError"
+              class="front-img"
+            />
+          </template>
+          <template v-else>
+            <div class="fallback-text">
+              Bitte wähle ein Element aus der Liste aus.
+            </div>
+          </template>
         </div>
-      </li>
-    </ul>
+
+        <!-- Rückseite -->
+        <div v-if="activeItem?.description" class="flip-card-back">
+          <p>{{ activeItem.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-buttons">
+    <a href="g3">
+      <button>G3</button>
+    </a>
+    <a href="g5">
+      <button>G5</button>
+    </a>
   </div>
 </template>
 
 <script>
 import "../../../styles/rolltor.css";
+import itemsData from "../../../files/rolltore/items_g4.json"
+
 export default {
-  name: "G1",
+  name: "G4View",
   data() {
     return {
-      items: [
-        {
-          name: "LED-Beleuchtungsgerät Peli mit Akku",
-          description: "Akkubetriebenes, tragbares LED-Gerät zur Ausleuchtung.",
-          visibility: false,
-          picture: "images/LED-Beleuchtungsgerät_Peli_mit_Akku.jpg",
-        },
-        {
-          name: "Rüstholz",
-          description:
-            "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
-          visibility: false,
-          picture: "images/Rüstholz.jpg",
-        },
-      ],
+      // Index des aktuell gewählten Eintrags
+      activeIndex: 0,
+      // Wird true, sobald das Bild nicht geladen werden konnte
+      imageErrored: false,
+      // Absoluter Fallback‑Pfad
+      fallbackImage: "images/Rolltore/G3/Picture_Not_Found.png",
+      isFlipped: false,
+      // Daten für die einzelnen Geräte
+      items: [],
     };
   },
+  mounted() {
+    this.items = itemsData;
+  },
+  computed: {
+    // Aktueller Eintrag
+    activeItem() {
+      return this.activeIndex !== null ? this.items[this.activeIndex] : null;
+    },
+    // Bildquelle mit Priorität: picture → fallbackImage
+    imageSrc() {
+      if (!this.activeItem) return this.fallbackImage;
+      if (this.imageErrored) return this.fallbackImage;
+
+      const pic = this.activeItem.picture;
+      return pic && pic.trim().length > 0 ? pic : this.fallbackImage;
+    },
+    // Source‑Link nur zeigen, wenn vorhanden & Bild nicht gültig
+    showSource() {
+      if (!this.activeItem) return false;
+      const hasSource = this.activeItem.source && this.activeItem.source.length > 0;
+      const hasPic = this.activeItem.picture && this.activeItem.picture.trim().length > 0;
+      return hasSource && (!hasPic || this.imageErrored);
+    },
+  },
   methods: {
-    toggleVisibility(index) {
-      this.items.forEach((item, i) => {
-        if (i !== index) {
-          item.visibility = false;
-        }
-      });
-      this.items[index].visibility = !this.items[index].visibility;
+    selectItem(index) {
+      this.activeIndex = this.activeIndex === index ? null : index;
+      this.imageErrored = false;
+      this.isFlipped = false; // Flip zurücksetzen bei neuem Item
+    },
+    handleImageError(event) {
+      if (event.target.src !== this.fallbackImage) {
+        this.imageErrored = true;
+        event.target.src = this.fallbackImage;
+      }
+    },
+    toggleFlip() {
+      console.log("activeItem:", this.activeItem);
+      console.log("Beschreibung:", this.activeItem?.description);
+      if (!this.activeItem || !this.activeItem.description) {
+        console.warn("Keine gültige Beschreibung vorhanden.");
+        return;
+      }
+      this.isFlipped = !this.isFlipped;
     },
   },
 };
 </script>
+
+<!-- Externe Styles einbinden (ge‑scoped, damit SFC‑Friendly) -->
+<style scoped src="../../../styles/rolltor.css"></style>

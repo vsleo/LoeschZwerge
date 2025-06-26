@@ -47,10 +47,19 @@
       </div>
     </div>
   </div>
+  <div class="navigation-buttons">
+    <a href="g2">
+      <button>G2</button>
+    </a>
+    <a href="g4">
+      <button>G4</button>
+    </a>
+  </div>
 </template>
 
 <script>
 import "../../../styles/rolltor.css";
+import itemsData from "../../../files/rolltore/items_g3.json"
 
 export default {
   name: "G3View",
@@ -64,57 +73,11 @@ export default {
       fallbackImage: "images/Rolltore/G3/Picture_Not_Found.png",
       isFlipped: false,
       // Daten für die einzelnen Geräte
-      items: [
-        {
-          name: "2x Atemschutzgeräte Sicherheitstrupp + Maske und Brandschutzhaube",
-          description:
-            "Umluftunabhängiges Atemschutzgerät, kurz auch PA für Pressluftatmer. Der Vorrat an Atemluft beträgt ca. 1600 Liter, welche in der 6 Liter großen Druckluftflasche bei 300 bar vorliegen. Der Atemluftvorrat entspricht ca. 30 Minuten Einsatzzeit.",
-          visibility: false,
-          picture: "images/Rolltore/G3/Atemschutzgerät_Beschreibung.jpg",
-          source:
-            "https://feuerwehr-taufkirchen.de/neue-technik-fuer-atemschutzgeraete/",
-        },
-        {
-          name: "Zelt",
-          description:
-            "Das Zelt ist eine Zusatzbeladung, welche das Umkleiden für Einsatzkräfte nach einem Brandeinsatz unter Atemschutz angenehmer gestalten soll",
-          visibility: false,
-          picture:
-            "images/Rolltore/G3/Toataltet00_cb687228-b1b4-4fbb-a627-c4f16a8a8fa1.webp",
-          source: "https://mylar.se/de/products/toataltet",
-        },
-        {
-          name: "Ersatzkleidung",
-          description:
-            "Die Ersatzkleidung wird nach einem Brandeinsatz angezogen, um die Dekontamination durch den Brandrauch zu begrenzen. Dieses Vorgehen ist ein essentieller Teil des Hygienschutzkonzepts.",
-          visibility: false,
-          picture: "images/Rolltore/G3/Ersatzkleidung.jpg",
-          source: "https://de.vecteezy.com/foto/3169819-kleiderstapel-auf-weissem-hintergrund",
-        },
-        {
-          name: "Sicherheitstrupptasche",
-          description:
-            "Die Sicherheitstasche beinhaltet eine 6 Liter Atemluftflasche, sowie eine Haube, welche per Lungenautomat mit der Atemluftflasche verbunden werden kann. Mit Hilfe dieser Notfalltasche wird die Rettung durch verrauchte Bereiche ermöglicht und die Rettung eines verunfallten Atemschutzgeräteträger erleichtert.",
-          visibility: false,
-          picture: "images/Rolltore/G3/Sicherheitstrupptasche.jpg",
-          source:
-            "https://www.rescue-tec.de/taschen/feuerwehr/rescue-tec-sicherheitstrupptasche-rit-bag-fuer-6-liter-atemluftflaschen",
-        },
-        {
-          name: "Eurokraft Mehrzweckwanne",
-          description: "Die Mehrzweckwanne hat verschiedene Einsatzmöglichkeiten, unter anderem als Auffangwanne für Kleingebinde, als Abfüllwanne oder als Transportwanne.",
-          picture: "images/Rolltore/G3/Mehrzweckwanne.jpg",
-          source: "https://www.amazon.de/eurokraft-basic-PE-Kleingebinde-Universalwanne-Volumen-stapelbar/dp/B0F3WS7K4H?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1P0IMYPPNRHIX",
-        },
-        {
-          name: "Zubehör Mehrzweckzug",
-          description: "Das Zubehör für den Mehrzweckzug ermöglicht eine flexible Handhabung und Anwendung in verschiedenen Einsatzszenarien. Das Zubehör umfasst unter anderem eine Umlenkrollen, Schäkel, Rundschlingen und weitere Komponenten, die eine effektive Nutzung des Mehrzweckzugs gewährleisten.",
-          visibility: false,
-          picture: "images/Rolltore/G3/Zubehör_Mehrzweckzug.jpg",
-          source: "https://www.btl-brandschutz.de/Mehrzweckzug-Satz-DIN-14800-MZ32-Greifzug-32-kN/710105",
-        },
-      ],
+      items: [],
     };
+  },
+  mounted() {
+    this.items = itemsData;
   },
   computed: {
     // Aktueller Eintrag
