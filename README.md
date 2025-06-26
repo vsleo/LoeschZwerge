@@ -2,9 +2,10 @@
 
 ## LöschZwerge ist eine interaktive Lernwebsite, welche, unabhängig vom Alter, versucht das Feuerwehrwesen spielerich näher zu bringen.
 
-+++Inhaltsverzeichnis+++
+## **Inhaltsverzeichnis** 
+1. [**Übersicht der Website**](#übersicht-der-website)
 
-+++SHOWCASE der Website++++
+## **Übersicht der Website**
 
 ## Wie erreicht man die Website.
 Es gibt zwei Wege, um die Website zu erreichen, welche sich in der reinen Benutzung jedoch nicht unterscheiden.
