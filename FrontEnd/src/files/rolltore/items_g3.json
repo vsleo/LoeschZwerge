@@ -1,12 +1,10 @@
 [
     {
         "name": "2x Atemschutzgeräte Sicherheitstrupp + Maske und Brandschutzhaube",
-        "description":
-        "Umluftunabhängiges Atemschutzgerät, kurz auch PA für Pressluftatmer. Der Vorrat an Atemluft beträgt ca. 1600 Liter, welche in der 6 Liter großen Druckluftflasche bei 300 bar vorliegen. Der Atemluftvorrat entspricht ca. 30 Minuten Einsatzzeit.",
+        "description": "Umluftunabhängiges Atemschutzgerät, kurz auch PA für Pressluftatmer. Der Vorrat an Atemluft beträgt ca. 1600 Liter, welche in der 6 Liter großen Druckluftflasche bei 300 bar vorliegen. Der Atemluftvorrat entspricht ca. 30 Minuten Einsatzzeit.",
         "visibility": false,
         "picture": "images/Rolltore/G3/Atemschutzgerät_Beschreibung.jpg",
-        "source":
-        "https://feuerwehr-taufkirchen.de/neue-technik-fuer-atemschutzgeraete/"
+        "source": "https://feuerwehr-taufkirchen.de/neue-technik-fuer-atemschutzgeraete/"
     },
     {
         "name": "Zelt",

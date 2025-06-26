@@ -31,15 +31,15 @@
   font-size: 0.9vw;
   font-family: Consolas, monospace;
 
+  grid-template-columns: 1fr;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Zwei Spalten */
   gap: 0.5vw 1vw;
   padding: 2vw 1vw;
 }
 
 li {
   cursor: pointer;
-  padding: 0.5vw;
+  padding: 0.35vw;
   
   align-items: center;
   position: relative;
@@ -187,4 +187,3 @@ ul {
 .navigation-buttons a button:hover {
   background-color: #0056b3;
 }
-

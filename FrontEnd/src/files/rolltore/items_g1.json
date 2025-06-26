@@ -18,13 +18,7 @@
         "picture": ""
     },
     {
-        "name": "Türöffnungskoffer 1",
-        "description": "",
-        "visibility": false,
-        "picture": ""
-    },
-    {
-        "name": "Türöffnungskoffer 2",
+        "name": "Türöffnungskoffer 1 & 2",
         "description": "",
         "visibility": false,
         "picture": ""
@@ -54,31 +48,19 @@
         "picture": ""
     },
     {
-        "name": "Bogensäge",
+        "name": "Bogensäge & Säbelsäge",
         "description": "",
         "visibility": false,
         "picture": ""
     },
     {
-        "name": "Säbelsäge",
+        "name": "VU-Koffer",
         "description": "",
         "visibility": false,
         "picture": ""
     },
     {
-        "name": "Verkehrunfall (VU)-Koffer",
-        "description": "",
-        "visibility": false,
-        "picture": ""
-    },
-    {
-        "name": "Ölwanne",
-        "description": "",
-        "visibility": false,
-        "picture": ""
-    },
-    {
-        "name": "Öl-Bindemittel",
+        "name": "Ölwanne & Ölbindemittel",
         "description": "",
         "visibility": false,
         "picture": ""
