@@ -4,9 +4,19 @@
 Das Ziel der Website ist es, durch unser interaktives Feuerwehrauto, Lernvideos oder ähnlichem Kontent Wissen anzueignen, welches daraufhin in einem passenden Quiz abgefragt wird. Dabei werden Grundlagen der Feuerwehr, aber auch komplexere Themen berücksichtigt.**
 
 <br>
+**LöschZwerge ist eine interaktive Lernwebsite, welche, unabhängig vom Alter, versucht das Feuerwehrwesen spielerisch näher zu bringen.
+Das Ziel der Website ist es, durch unser interaktives Feuerwehrauto, Lernvideos oder ähnlichem Kontent Wissen anzueignen, welches daraufhin in einem passenden Quiz abgefragt wird. Dabei werden Grundlagen der Feuerwehr, aber auch komplexere Themen berücksichtigt.**
+
+<br>
 
 # **Inhaltsverzeichnis** 
+# **Inhaltsverzeichnis** 
 1. [**Übersicht der Website**](#übersicht-der-website)
+2. [**Besondere Funktionen**](#besondere-funktionen)
+3. [**Wie erreicht man die Website**](#wie-erreicht-man-die-website)
+4. [**Geplante Features für die Zukunft**](#geplante-features-für-die-zukunft)
+
+<br>
 2. [**Besondere Funktionen**](#besondere-funktionen)
 3. [**Wie erreicht man die Website**](#wie-erreicht-man-die-website)
 4. [**Geplante Features für die Zukunft**](#geplante-features-für-die-zukunft)
@@ -44,7 +54,19 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
 ### **1. Aufrufen durch GitHub-Pages (für normale Nutzer empfohlen)**
     Der einfache Weg, um die Website zu erreichen, ist über den GitHub-Pages-Link:  
 <a href="https://vsleo.github.io/LoeschZwerge/" target="_blank">https://vsleo.github.io/LoeschZwerge/</a>
+### **1. Aufrufen durch GitHub-Pages (für normale Nutzer empfohlen)**
+    Der einfache Weg, um die Website zu erreichen, ist über den GitHub-Pages-Link:  
+<a href="https://vsleo.github.io/LoeschZwerge/" target="_blank">https://vsleo.github.io/LoeschZwerge/</a>
 
+### **2. Starten durch local host (für Entwickler empfohlen)**
+    1. Projekt über GitHub klonen oder als zip-Datei herunterladen
+    2. Das Terminal der Entwicklungsumgebung öffnen
+    3. Durch das Kommando "npm install" alle notwendigen Dependencies installieren
+    4. Durch das Kommando "npm run dev" den local host starten
+    5. Interaktion mit folgendem Link im Terminal "http://localhost:xxxx/LoeschZwerge/"
+[**Inhaltsverzeichnis**](#inhaltsverzeichnis)
+
+<br>
 ### **2. Starten durch local host (für Entwickler empfohlen)**
     1. Projekt über GitHub klonen oder als zip-Datei herunterladen
     2. Das Terminal der Entwicklungsumgebung öffnen
