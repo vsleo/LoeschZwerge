@@ -31,8 +31,26 @@ export const importedQuestions = [
   {
     id: 9,
     question:
-      "Wie viele Personen haben in einem normalen Löschgruppenfahrzeug (LF) Platz?",
-    options: ["4", "6", "9", "12"],
+      "Wie viele Personen haben in einem standard Löschgruppenfahrzeug (LF) Platz?",
+    options: ["3", "5", "9", "12"],
     correctIndex: 2,
+  },
+  {
+    id: 10,
+    question:
+      "Wie viel Wasser fördert die Feuerlöschkreiselpumpe eines LF 10 pro Minute bei 8 Bar?",
+    options: ["800","1000","1200","2500"],
+    correctIndex: 1,
+  },
+  {
+    id: 11,
+    question:
+      "Welche Nennrettungshöhe und Nennausladung hat eine Drehleiter (DLK) 23/12",
+    options: ["23m Nennrettungshöhe und 12m Nennausladung",
+              "23m Nennrettungshöhe und 23m Nennausladung",
+              " 12m Nennrettungshöhe und 23m Nennausladung",
+              "23m Nennrettungshöhe und 23m Nennausladung"
+            ],
+    correctIndex: 0,
   },
 ];

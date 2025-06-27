@@ -84,25 +84,25 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Verhindert Überlauf */
-}
 
-header::before {
-  background: linear-gradient(
-    135deg,
-    #0b0c2a 0%,
-    #1a1a40 25%,
-    #3c1053 50%,
-    #6f42c1 75%,
-    #00c9ff 100%
-  );
-  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
-  content: "";
-  inset: 0;
-  position: fixed;
-  background-size: cover;
-  opacity: 0.9;
-  z-index: 5; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
-  height: 5vw;
+  &::before {
+    background: linear-gradient(
+        135deg,
+        #0b0c2a 0%,
+        #1a1a40 25%,
+        #3c1053 50%,
+        #6f42c1 75%,
+        #00c9ff 100%
+      );
+      box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+      content: "";
+      inset: 0;
+      position: fixed;
+      background-size: cover;
+      opacity: 0.9;
+      z-index: 5; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
+      height: 5vw;
+  }
 }
 
 header > * {
@@ -128,6 +128,9 @@ header img {
   position: fixed;
   top: 2vw; /* Abstand vom oberen Rand */
   left: 2vw; /* Abstand vom linken Rand */
+
+  transition-property: transform;
+  transition-duration: .125s;
 }
 
 .headline a:hover img {
@@ -157,12 +160,14 @@ nav {
   margin: 0.2vw;
   border-radius: 6px;
   height: 1vw;
-}
+  transition-property: background-color;
+  transition-duration: .25s;
 
-/* Hover Effekt */
-.nav a:hover {
-  background: #ffffff49;
-  color: #fff;
+  /* Hover Effect */
+  &:hover {
+    background-color: #ffffff49;
+    color: #fff;
+  }
 }
 
 .nav a.active {
