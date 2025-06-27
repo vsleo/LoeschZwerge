@@ -29,6 +29,7 @@
   z-index: 3;
   color: black;
   font-size: 0.9vw;
+  font-weight: 1000;
   font-family: Consolas, monospace;
 
   grid-template-columns: 1fr;
@@ -170,7 +171,7 @@ ul {
 .navigation-buttons {
   display: flex;
   justify-content: center;
-  gap: 14vw;
+  gap: 1.5vw;
   margin-top: 2vw;
 }
 

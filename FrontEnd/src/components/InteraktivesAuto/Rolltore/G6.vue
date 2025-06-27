@@ -51,8 +51,11 @@
     <a href="g5">
       <button>G5</button>
     </a>
-    <a href="g1">
-      <button>G1</button>
+    <a href="quizallgemein">
+      <button>Quiz</button>
+    </a>
+    <a href="gr">
+      <button>GR</button>
     </a>
   </div>
 </template>

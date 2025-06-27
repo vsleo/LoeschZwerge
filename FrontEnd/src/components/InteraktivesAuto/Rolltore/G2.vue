@@ -51,6 +51,9 @@
     <a href="g1">
       <button>G1</button>
     </a>
+    <a href="quizallgemein">
+      <button>Quiz</button>
+    </a>
     <a href="g3">
       <button>G3</button>
     </a>
