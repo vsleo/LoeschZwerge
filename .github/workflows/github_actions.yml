@@ -23,7 +23,7 @@ jobs:
         run: cd FrontEnd && npm install eslint --save-dev
 
       - name: Abhängigkeiten installieren
-        run: cd Frontend && npm ci
+        run: cd FrontEnd && npm ci
 
       - name: ESLint ausführen
         run: cd FrontEnd && npm run lint
