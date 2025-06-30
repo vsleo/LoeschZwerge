@@ -4,7 +4,7 @@
   ></HydrantenschildKomponente>
   <div class="hydranten-game" style="color: white">
     <h1>Hydranten Game</h1>
-    <p>Values received: {{ values }}</p>
+    <p>Values received : {{ values }}</p>
   </div>
 </template>
 
