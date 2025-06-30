@@ -135,6 +135,11 @@ ul {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+
+  animation: wiggle 1s ease-in-out;
+  animation-delay: s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
 }
 
 .flip-card-inner.flipped {
@@ -171,7 +176,7 @@ ul {
 .navigation-buttons {
   display: flex;
   justify-content: center;
-  gap: 1.5vw;
+  gap: 2vw;
   margin-top: 2vw;
 }
 
@@ -187,4 +192,29 @@ ul {
 
 .navigation-buttons a button:hover {
   background-color: #0056b3;
+}
+
+.wiggle-wrapper.wiggle {
+  animation-name: tilt-wiggle;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-iteration-count: 2;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+}
+
+@keyframes tilt-wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
 }

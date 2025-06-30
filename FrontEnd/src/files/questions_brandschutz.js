@@ -8,7 +8,7 @@
  */
 export const importedQuestions = [
   {
-    id: 4,
+    id: 6,
     question: "Was ist der Zweck eines Rauchmelders?",
     options: [
       "Er misst die Temperatur im Raum",
@@ -19,7 +19,7 @@ export const importedQuestions = [
     correctIndex: 2,
   },
   {
-    id: 5,
+    id: 7,
     question:
       "Wie oft sollte man einen Feuerlöscher mindestens überprüfen lassen?",
     options: [
@@ -31,7 +31,31 @@ export const importedQuestions = [
     correctIndex: 2,
   },
   {
-    id: 6,
+    id: 8,
+    question:
+      "Welche drei Elemente braucht ein Feuer zum Brennen (Feuerdreieck)?",
+    options: [
+      "Luft, Wasser, Funken",
+      "Sauerstoff, Brennstoff, Wärme",
+      "Holz, Feuerzeug, Zunder",
+      "Licht, Energie, Wind",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 9,
+    question:
+      "Warum sind Brände in Bäckereien besonders gefährlich?",
+    options: [
+      "Der Sauerstoffgehalt in Bäckereien wird künstlich erhöht, damit der Teig schneller aufgeht",
+      "Die verschiedenen Backwaren erhöhen die Brandlast erheblich",
+      "Das Mehl kann aufgrund seiner feinen Partikel eine Mehlexplosion verursachen",
+      "Brände in Bäckerein sind grundsätzlich nicht gefährlicher, als in anderen Betrieben",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 10,
     question:
       "Welche drei Elemente braucht ein Feuer zum Brennen (Feuerdreieck)?",
     options: [

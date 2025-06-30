@@ -6,7 +6,7 @@
  */
 export const importedQuestions = [
   {
-    id: 7,
+    id: 11,
     question:
       "Wie nennt man das große Einsatzfahrzeug mit Wassertank und Pumpe?",
     options: [
@@ -18,7 +18,7 @@ export const importedQuestions = [
     correctIndex: 1,
   },
   {
-    id: 8,
+    id: 12,
     question: "Wozu dient die Drehleiter auf einem Feuerwehrauto?",
     options: [
       "Zum Löschen von Bodenbränden",
@@ -29,21 +29,21 @@ export const importedQuestions = [
     correctIndex: 2,
   },
   {
-    id: 9,
+    id: 13,
     question:
       "Wie viele Personen haben in einem standard Löschgruppenfahrzeug (LF) Platz?",
     options: ["3", "5", "9", "12"],
     correctIndex: 2,
   },
   {
-    id: 10,
+    id: 14,
     question:
       "Wie viel Wasser fördert die Feuerlöschkreiselpumpe eines LF 10 pro Minute bei 8 Bar?",
     options: ["800","1000","1200","2500"],
     correctIndex: 1,
   },
   {
-    id: 11,
+    id: 15,
     question:
       "Welche Nennrettungshöhe und Nennausladung hat eine Drehleiter (DLK) 23/12",
     options: ["23m Nennrettungshöhe und 12m Nennausladung",

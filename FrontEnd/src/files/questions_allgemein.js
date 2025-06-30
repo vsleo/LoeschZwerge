@@ -37,4 +37,28 @@ export const importedQuestions = [
     ],
     correctIndex: 2,
   },
+  {
+    id: 4,
+    question:
+      "Was gehört zur persönlichen Schutzausrüstung (PSA) eines Feuerwehrmanns?",
+    options: [
+      "Rennanzug, Helm, Handschuhe",
+      "Sonnenbrille, Mütze, Turnschuhe",
+      "Feuerwehrhelm, Schutzanzug, Handschuhe, Stiefel",
+      "Warnweste, Jeans, Basecap",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 5,
+    question:
+      "Was gehört zur persönlichen Schutzausrüstung (PSA) eines Feuerwehrmanns?",
+    options: [
+      "Rennanzug, Helm, Handschuhe",
+      "Sonnenbrille, Mütze, Turnschuhe",
+      "Feuerwehrhelm, Schutzanzug, Handschuhe, Stiefel",
+      "Warnweste, Jeans, Basecap",
+    ],
+    correctIndex: 2,
+  },
 ];
