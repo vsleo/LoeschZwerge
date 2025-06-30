@@ -25,10 +25,13 @@ jobs:
           rm -rf node_modules package-lock.json
 
       - name: Eslint und Stylelint installieren
-        run: cd FrontEnd && npm install eslint --save-dev
+        run: cd FrontEnd && npm install eslint --save-dev && npm install stylelint stylelint-config-standard --save-dev
 
       - name: Playwright installieren
         run: cd FrontEnd && npx playwright install
+
+      - name: npm-check installieren
+        run: cd FrontEnd && npm install npm-check --save-dev
 
       - name: Abhängigkeiten installieren
         run: cd FrontEnd && npm install --include=optional
