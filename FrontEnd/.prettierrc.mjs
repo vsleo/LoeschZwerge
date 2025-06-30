@@ -1,3 +1,5 @@
+import "prettier-plugin-astro";
+
 /** @type {import("prettier").Config} */
 export default {
   plugins: ["prettier-plugin-astro"],

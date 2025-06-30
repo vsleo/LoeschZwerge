@@ -33,11 +33,14 @@ jobs:
       - name: Abhängigkeiten installieren
         run: cd FrontEnd && npm install --include=optional
 
-      - name: ESLint ausführen
+      - name: ESLint ausführen & Stylelint ausführen
         run: cd FrontEnd && npm run lint
 
       - name: Prettier ausführen
         run: cd FrontEnd && npm run prettier
+
+      - name: npm-check ausführen
+        run: cd FrontEnd && npm run check
 
       - name: build
         run: cd FrontEnd && npm run build
