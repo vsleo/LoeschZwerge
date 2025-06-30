@@ -19,11 +19,19 @@ jobs:
         with:
           node-version: 20
 
+      - name: Set npm optional dependencies flag
+        run: npm config set optional true
+
+      - name: Clean install Vorbereitung
+        run: |
+          cd FrontEnd
+          rm -rf node_modules package-lock.json
+
       - name: Eslint und Stylelint installieren
         run: cd FrontEnd && npm install eslint --save-dev
 
       - name: Abhängigkeiten installieren
-        run: cd FrontEnd && npm ci
+        run: cd FrontEnd && npm install
 
       - name: ESLint ausführen
         run: cd FrontEnd && npm run lint
