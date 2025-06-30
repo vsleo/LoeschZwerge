@@ -208,7 +208,6 @@ function next() {
 .hotspot:hover {
   color: #fff; /* Textfarbe beim Hover */
   background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
-  border-radius: 8px; /* Abgerundete Ecken */
 }
 
 </style>
