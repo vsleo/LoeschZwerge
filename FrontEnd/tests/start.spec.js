@@ -16,7 +16,8 @@ test.describe("Löschzwerge Seite", () => {
 
     // Prüfen, ob Slider-Bilder existieren
     const sliderImages = slider.locator(".slider-track img");
-    await expect(sliderImages).toHaveCountGreaterThan(0);
+    const numberOfImages = await sliderImages.count();
+    await expect(numberOfImages).toBeGreaterThan(0);
 
     // Box-Überschriften prüfen
     await expect(
