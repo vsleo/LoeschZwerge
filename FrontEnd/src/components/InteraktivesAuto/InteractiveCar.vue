@@ -67,19 +67,16 @@
       >
         {{ hotspot.label }}
       </a>
-
-
     </div>
-          <!-- Navigation -->
-          <button class="nav-button left" @click="prev">
-        <img src="images/arrow_left.png"/>
-      </button>
-      <button class="nav-button right" @click="next">
-        <img src="images/arrow_right.png"/>
-      </button>
+    <!-- Navigation -->
+    <button class="nav-button left" @click="prev">
+      <img src="images/arrow_left.png" />
+    </button>
+    <button class="nav-button right" @click="next">
+      <img src="images/arrow_right.png" />
+    </button>
   </div>
 </template>
-
 
 <script setup>
 import { ref } from "vue";
@@ -90,28 +87,77 @@ const images = [
   {
     image: "images/LF-10/Feuerwehrauto-LF10-left.png",
     hotspots: [
-      { top: "35%", left: "48.5%", width: "16.8%", height: "24.5%", href: "/LoeschZwerge/g1", label: "RolltorTH" },
-      { top: "35%", left: "66%", width: "15.3%", height: "22.6%", href: "/LoeschZwerge/g3", label: "RolltorAGT" },
-      { top: "35%", left: "82%", width: "16%", height: "24.5%", href: "/LoeschZwerge/g5", label: "RolltorAT" },
-    ]
+      {
+        top: "35%",
+        left: "48.5%",
+        width: "16.8%",
+        height: "24.5%",
+        href: "/LoeschZwerge/g1",
+        label: "RolltorTH",
+      },
+      {
+        top: "35%",
+        left: "66%",
+        width: "15.3%",
+        height: "22.6%",
+        href: "/LoeschZwerge/g3",
+        label: "RolltorAGT",
+      },
+      {
+        top: "35%",
+        left: "82%",
+        width: "16%",
+        height: "24.5%",
+        href: "/LoeschZwerge/g5",
+        label: "RolltorAT",
+      },
+    ],
   },
   {
     image: "images/LF-10/Feuerwehrauto-LF10-rear.png",
     hotspots: [
-      { top: "33%", left: "42.4%", width: "15.3%", height: "26%", href: "/LoeschZwerge/gr", label: "Rolltor Pumpe" }
-    ]
+      {
+        top: "33%",
+        left: "42.4%",
+        width: "15.3%",
+        height: "26%",
+        href: "/LoeschZwerge/gr",
+        label: "Rolltor Pumpe",
+      },
+    ],
   },
   {
     image: "images/LF-10/Feuerwehrauto-LF10-right.png",
     hotspots: [
-      { top: "35%", left: "34.7%", width: "16.8%", height: "24.5%", href: "/LoeschZwerge/g2", label: "Rolltor Stromversorgung" },
-      { top: "35%", left: "18.7%", width: "15.3%", height: "22.6%", href: "/LoeschZwerge/g4", label: "Rolltor Wasserführende Armaturen" },
-      { top: "35%", left: "2%", width: "16%", height: "24.5%", href: "/LoeschZwerge/g6", label: "Rolltor Schlauchmaterial" },
-    ]
+      {
+        top: "35%",
+        left: "34.7%",
+        width: "16.8%",
+        height: "24.5%",
+        href: "/LoeschZwerge/g2",
+        label: "Rolltor Stromversorgung",
+      },
+      {
+        top: "35%",
+        left: "18.7%",
+        width: "15.3%",
+        height: "22.6%",
+        href: "/LoeschZwerge/g4",
+        label: "Rolltor Wasserführende Armaturen",
+      },
+      {
+        top: "35%",
+        left: "2%",
+        width: "16%",
+        height: "24.5%",
+        href: "/LoeschZwerge/g6",
+        label: "Rolltor Schlauchmaterial",
+      },
+    ],
   },
   {
-    image: "images/LF-10/Feuerwehrauto-LF10-front.png"
-  }
+    image: "images/LF-10/Feuerwehrauto-LF10-front.png",
+  },
 ];
 
 function prev() {
@@ -122,7 +168,6 @@ function next() {
   currentIndex.value = (currentIndex.value + 1) % images.length;
 }
 </script>
-
 
 <style scoped>
 .image-wrapper {
@@ -178,7 +223,6 @@ function next() {
   display: block;
 }
 
-
 .nav-button {
   position: absolute;
   top: 55%;
@@ -196,18 +240,17 @@ function next() {
   right: 5%;
 }
 
+.nav-button img {
+  transition: transform 0.2s ease;
+}
+
 .nav-button:hover img {
   transform: scale(1.03);
   cursor: pointer;
-}
-
-.nav-button img {
-  transition: transform 0.2s ease;
 }
 
 .hotspot:hover {
   color: #fff; /* Textfarbe beim Hover */
   background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
 }
-
 </style>
