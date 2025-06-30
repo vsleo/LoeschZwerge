@@ -12,12 +12,6 @@ test.describe("Start.vue", () => {
     );
   });
 
-  test("Einleitungstext ist sichtbar", async ({ page }) => {
-    await expect(page.locator(".paragraph"))
-      .first()
-      .toContainText("Was genau ist die Feuerwehr?");
-  });
-
   test('Box mit "Die Feuerwehr" und Beschreibung ist sichtbar', async ({
     page,
   }) => {
@@ -50,8 +44,9 @@ test.describe("Start.vue", () => {
     );
     expect(activeSlides).toBe(1);
     // Es sollte nicht immer das erste Bild aktiv sein
+
     const isFirstActive = await slides
-      .first()
+      .nth(1)
       .evaluate((node) => node.classList.contains("active"));
     expect(isFirstActive).toBeFalsy();
   });

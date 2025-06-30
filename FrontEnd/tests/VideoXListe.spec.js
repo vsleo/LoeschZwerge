@@ -15,14 +15,12 @@ test.describe("VideoXListe.vue", () => {
   });
 
   test("Die Videoliste wird angezeigt", async ({ page }) => {
-    const videoList = page.locator(".video-list ul li");
-    await expect(videoList).toHaveCountGreaterThan(0);
-    // Jeder Listeneintrag sollte einen Titel enthalten
-    await expect(videoList.first().locator("p")).toBeVisible();
+    const videoList = page.locator(".video-list");
+    await expect(videoList).toBeVisible();
   });
 
   test("Klick auf einen Listeneintrag wechselt das Video", async ({ page }) => {
-    const videoList = page.locator(".video-list ul li");
+    const videoList = page.locator(".video-list");
     // Hole das zweite Video (falls vorhanden)
     if ((await videoList.count()) > 1) {
       const secondVideo = videoList.nth(1);

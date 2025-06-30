@@ -34,6 +34,9 @@ jobs:
       - name: build
         run: cd FrontEnd && npm run build
 
+      - name: Test
+        run: cd FrontEnd && npm run test
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
