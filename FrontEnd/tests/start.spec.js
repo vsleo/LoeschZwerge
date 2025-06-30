@@ -33,9 +33,10 @@ test.describe("Löschzwerge Seite", () => {
     ).toBeVisible();
 
     // Links prüfen
-    await expect(
-      page.locator('a[href="/LoeschZwerge/car"]').count,
-    ).toBeGreaterThan(0);
+    const carLinks = page.locator('a[href="/LoeschZwerge/car"]');
+    const carLinkCount = await carLinks.count();
+    await expect(carLinkCount).toBeGreaterThan(0);
+
     await expect(
       page.locator('a[href="/LoeschZwerge/quiz"]').count,
     ).toBeGreaterThan(0);
