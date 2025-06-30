@@ -36,9 +36,5 @@ test.describe("Start.vue", () => {
       (nodes) => nodes.filter((n) => n.classList.contains("active")).length,
     );
     expect(activeSlides).toBe(1);
-    // Es sollte nicht immer das erste Bild aktiv sein
-    const isFirstActive = await slides
-      .first()
-      .evaluate((node) => node.classList.contains("active"));
   });
 });

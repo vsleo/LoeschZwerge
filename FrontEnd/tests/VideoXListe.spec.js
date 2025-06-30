@@ -24,7 +24,6 @@ test.describe("VideoXListe.vue", () => {
     // Hole das zweite Video (falls vorhanden)
     if ((await videoList.count()) > 1) {
       const secondVideo = videoList.nth(1);
-      const videoTitle = await secondVideo.locator("p").innerText();
       await secondVideo.click();
       // Das iframe sollte jetzt ein anderes Video laden (id aus dem JS-Modul)
       const iframe = page.locator(".video iframe");
