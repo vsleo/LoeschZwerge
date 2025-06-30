@@ -70,7 +70,6 @@ export default {
 <style>
 body {
   margin: 0;
-
   font-family: Consolas, monospace;
   color: #4a3c3c;
 }
@@ -79,7 +78,6 @@ body {
 header {
   position: relative;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +92,7 @@ header {
         #6f42c1 75%,
         #00c9ff 100%
       );
-      box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+      box-shadow: 0 5px 10px rgb(255 255 255 / 50%);
       content: "";
       inset: 0;
       position: fixed;
@@ -122,13 +120,12 @@ header img {
   height: 2.5vw;
   margin-top: -1vw;
   min-height: 32px;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 10%));
   image-rendering: crisp-edges;
   z-index: 1;
   position: fixed;
   top: 2vw; /* Abstand vom oberen Rand */
   left: 2vw; /* Abstand vom linken Rand */
-
   transition-property: transform;
   transition-duration: .125s;
 }
@@ -142,8 +139,8 @@ nav {
   position: fixed;
   top: 2vw; /* Positioniert die Navigation 80% vom oberen Rand */
   height: 1vw; /* Abstand zwischen den Links */
-
   transform: translateX(-50%); /* Zentriert die Navigation */
+
   /* Vertikal zentriert (optional) */
 }
 
@@ -154,7 +151,7 @@ nav {
 
 /* Navigation Links */
 .nav a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   padding: 0.3vw 0.5vw;
   margin: 0.2vw;

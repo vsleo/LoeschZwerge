@@ -250,9 +250,7 @@ export default {
 }
 
 .hotspot-input:focus {
-  outline-color: blue;
-  outline-width: 1px;
-  outline-style: solid;
+  outline: blue solid 1px;
   z-index: 10;
 }
 </style>

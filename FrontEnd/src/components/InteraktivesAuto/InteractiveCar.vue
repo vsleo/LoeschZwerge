@@ -251,6 +251,6 @@ function next() {
 
 .hotspot:hover {
   color: #fff; /* Textfarbe beim Hover */
-  background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+  background-color: rgb(0 0 0 / 50%); /* Halbtransparenter Hintergrund */
 }
 </style>

@@ -126,13 +126,13 @@ p {
 }
 
 a {
-  color: rgb(128, 149, 243);
+  color: rgb(128 149 243);
   text-decoration: none;
   transition: color 0.3s ease-out;
 }
 
 a:hover {
-  color: rgb(179, 197, 255);
+  color: rgb(179 197 255);
   transition: color 0.3s ease;
 }
 
@@ -169,7 +169,7 @@ a:hover {
   background: linear-gradient(to top left, #161616, #414141);
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 7px rgb(255 255 255 / 50%);
 }
 
 .box-heading {
@@ -206,7 +206,7 @@ a:hover {
   overflow: hidden;
   position: relative;
   background-color: black;
-  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 5px 10px rgb(255 255 255 / 70%);
 }
 
 .slider-track {

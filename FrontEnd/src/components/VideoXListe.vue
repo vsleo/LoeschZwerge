@@ -57,7 +57,7 @@ export default {
   position: absolute;
   top: 10vw;
   left: 60vw;
-  background-color: rgba(255, 255, 255, 0.552);
+  background-color: rgb(255 255 255 / 55.2%);
   border-radius: 2vw;
   z-index: 3;
   color: black;

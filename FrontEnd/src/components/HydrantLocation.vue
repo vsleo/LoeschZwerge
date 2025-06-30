@@ -150,13 +150,15 @@ export default {
 
 <style scoped>
 .hotspot-div.highlighted {
-  background: rgba(255, 0, 0, 0.4) !important;
+  background: rgb(255 0 0 / 40%) !important;
   border: 2px solid red !important;
 }
+
 .hotspot-div.ziel {
-  background: rgba(0, 255, 0, 0.4) !important;
+  background: rgb(0 255 0 / 40%) !important;
   border: 2px solid green !important;
 }
+
 .hotspot-grid {
   position: relative;
   width: 1920px;
@@ -164,6 +166,7 @@ export default {
   background: #f0f0f0;
   border: 1px solid #bbb;
 }
+
 .hotspot-div {
   position: absolute;
   border: 1px solid black;
@@ -181,9 +184,10 @@ export default {
   color: black;
   user-select: none;
 }
+
 .hotspot-div:hover,
 .hotspot-div:focus {
   border: 2px solid #2196f3;
-  background: rgba(33, 150, 243, 0.1);
+  background: rgb(33 150 243 / 10%);
 }
 </style>

@@ -45,8 +45,7 @@ export default {
 <style scoped>
 .quiz-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   margin: 1vw;
   padding: 1vw;
@@ -61,7 +60,7 @@ a {
   margin: 10px 0;
   padding-left: 40px;
   background-color: #a7a7a7;
-  color: rgb(0, 0, 0);
+  color: rgb(0 0 0);
   text-decoration: none;
   border-radius: 5px;
   text-align: left;
@@ -69,8 +68,8 @@ a {
   font-size: 3vw;
   font-weight: bold;
   font-family:
-    Tiny5,
-    Pixelify Sans,
+    "Tiny5",
+    "Pixelify Sans",
     sans-serif;
 }
 
@@ -80,7 +79,7 @@ a img {
 
 a:hover {
   background-color: #a6e1d7;
-  color: rgb(0, 0, 0);
+  color: rgb(0 0 0);
   transform: scale(1.02);
 }
 
