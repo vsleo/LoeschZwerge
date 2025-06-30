@@ -27,6 +27,9 @@ jobs:
       - name: Eslint und Stylelint installieren
         run: cd FrontEnd && npm install eslint --save-dev
 
+      - name: Playwright installieren
+        run: cd FrontEnd && npx playwright install
+
       - name: Abhängigkeiten installieren
         run: cd FrontEnd && npm install --include=optional
 
