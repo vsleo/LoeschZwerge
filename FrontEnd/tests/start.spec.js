@@ -37,12 +37,15 @@ test.describe("Löschzwerge Seite", () => {
     const carLinkCount = await carLinks.count();
     await expect(carLinkCount).toBeGreaterThan(0);
 
-    await expect(
-      page.locator('a[href="/LoeschZwerge/quiz"]').count,
-    ).toBeGreaterThan(0);
-    await expect(
-      page.locator('a[href="/LoeschZwerge/brandschutz"]').count,
-    ).toBeGreaterThan(0);
+    const quizLinks = page.locator('a[href="/LoeschZwerge/quiz"]');
+    const quizLinkCount = await quizLinks.count();
+    await expect(quizLinkCount).toBeGreaterThan(0);
+
+    const brandschutzLinks = page.locator(
+      'a[href="/LoeschZwerge/brandschutz"]',
+    );
+    const brandschutzLinkCount = await brandschutzLinks.count();
+    await expect(brandschutzLinkCount).toBeGreaterThan(0);
 
     // Optional: Klick-Test für einen der Links
     await page.locator('a[href="/LoeschZwerge/car"]').first().click();
