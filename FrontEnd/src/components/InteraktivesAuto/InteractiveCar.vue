@@ -195,4 +195,19 @@ function next() {
 .right {
   right: 5%;
 }
+
+.nav-button:hover img {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.nav-button img {
+  transition: transform 0.2s ease;
+}
+
+.hotspot:hover {
+  color: #fff; /* Textfarbe beim Hover */
+  background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+}
+
 </style>

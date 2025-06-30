@@ -14,7 +14,7 @@
     </div>
     <div class="wrapper">
       <div class="box">
-        <h2 class="heading" style="color: lightcoral">Die Feuerwehr</h2>
+        <h1 class="heading" style="color: lightcoral">Die Feuerwehr</h1>
         <p class="paragraph">
           Die Feuerwehr hat einige wichtige Aufgaben zu erfüllen. Dazu gehören
           Brandschutz, technische Hilfeleistung und Katastrophenschutz - Dabei
@@ -83,24 +83,34 @@ onMounted(() => {
   font-family: Consolas, monospace;
 }
 
-.image-slider {
+.image:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.top-slider {
+  width: 100vw;
+  height: 230px;
+  overflow: hidden;
   position: relative;
   width: 50vw;
   height: 20vw;
   overflow: hidden;
 }
 
-.slide {
-  position: absolute;
-  width: 100%;
+.slider-track {
+  display: flex;
   height: 100%;
-  object-fit: contain;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  will-change: transform;
 }
 
-.slide.active {
-  opacity: 1;
-  z-index: 1;
+.slider-track img {
+  height: 100%;
+  flex-shrink: 0;
+  width: auto;
+  pointer-events: none;
+  user-select: none;
+  margin-right: 5px;
 }
 </style>
