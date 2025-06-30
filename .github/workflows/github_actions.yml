@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: 20
 
-      - name: Set npm optional dependencies flag
-        run: cd FrontEnd && npm config set optional true
-
       - name: Clean install Vorbereitung
         run: |
           cd FrontEnd
@@ -31,7 +28,7 @@ jobs:
         run: cd FrontEnd && npm install eslint --save-dev
 
       - name: Abhängigkeiten installieren
-        run: cd FrontEnd && npm install
+        run: cd FrontEnd && npm install --include=optional
 
       - name: ESLint ausführen
         run: cd FrontEnd && npm run lint
