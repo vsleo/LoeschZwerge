@@ -38,7 +38,7 @@ export const importedQuestions = [
   {
     id: 14,
     question:
-      "Wie viel Wasser fördert die Feuerlöschkreiselpumpe eines LF 10 pro Minute bei 8 Bar?",
+      "Wie viel Wasser fördert die Feuerlöschkreiselpumpe eines LF 10 pro Minute bei 10 Bar?",
     options: ["800","1000","1200","2500"],
     correctIndex: 1,
   },

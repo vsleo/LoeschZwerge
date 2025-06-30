@@ -9,20 +9,20 @@
 export const importedQuestions = [
   {
     id: 1,
-    question: "Was ist die Hauptaufgabe der Feuerwehr?",
+    question: "Was ist keine Aufgabe der Feuerwehr?",
     options: [
       "Feuer löschen",
       "Menschen retten",
       "Tiere retten",
-      "Umweltschutz",
+      "Verunfallte Fahrzeuge abschleppen",
     ],
-    correctIndex: 0,
+    correctIndex: 3,
   },
   {
     id: 2,
     question:
-      "Welche Notrufnummer wählt man in Europa für Feuerwehr und Rettung?",
-    options: ["110", "112", "911", "116"],
+      "Unter welcher Notrufnummer erreicht man in Europa die Feuerwehr?",
+    options: ["110", "112", "104", "116"],
     correctIndex: 1,
   },
   {
@@ -40,24 +40,24 @@ export const importedQuestions = [
   {
     id: 4,
     question:
-      "Was gehört zur persönlichen Schutzausrüstung (PSA) eines Feuerwehrmanns?",
+      "Woran erkennt die Feuerwehr, wo sich Hydranten in der Nähe befinden?",
     options: [
-      "Rennanzug, Helm, Handschuhe",
-      "Sonnenbrille, Mütze, Turnschuhe",
-      "Feuerwehrhelm, Schutzanzug, Handschuhe, Stiefel",
-      "Warnweste, Jeans, Basecap",
+      "Es gibt keine Hinweise auf die Position von Hydranten, man muss sie suchen",
+      "An dem Hydrantenschild, welches die Distanz zum nächsten Hydranten in der Einheit Meter angibt",
+      "Die deutsche Feuerwehr verwendet keine Hydranten",
+      "Man muss bei der Haupteinsatzzentrale (HEZ) eine detaillierte Karte anfordern",
     ],
-    correctIndex: 2,
+    correctIndex: 1,
   },
   {
     id: 5,
     question:
-      "Was gehört zur persönlichen Schutzausrüstung (PSA) eines Feuerwehrmanns?",
+      "Warum sind Brände in Bäckereien besonders gefährlich?",
     options: [
-      "Rennanzug, Helm, Handschuhe",
-      "Sonnenbrille, Mütze, Turnschuhe",
-      "Feuerwehrhelm, Schutzanzug, Handschuhe, Stiefel",
-      "Warnweste, Jeans, Basecap",
+       "Der Sauerstoffgehalt in Bäckereien wird künstlich erhöht, damit der Teig schneller aufgeht",
+      "Die verschiedenen Backwaren erhöhen die Brandlast erheblich",
+      "Das Mehl kann aufgrund seiner feinen Partikel eine Mehlexplosion verursachen",
+      "Brände in Bäckerein sind grundsätzlich nicht gefährlicher, als in anderen Betrieben",
     ],
     correctIndex: 2,
   },

@@ -45,25 +45,25 @@ export const importedQuestions = [
   {
     id: 9,
     question:
-      "Warum sind Brände in Bäckereien besonders gefährlich?",
+      "Welchen Sauerstoffgehalt hat unsere Atemluft?",
     options: [
-      "Der Sauerstoffgehalt in Bäckereien wird künstlich erhöht, damit der Teig schneller aufgeht",
-      "Die verschiedenen Backwaren erhöhen die Brandlast erheblich",
-      "Das Mehl kann aufgrund seiner feinen Partikel eine Mehlexplosion verursachen",
-      "Brände in Bäckerein sind grundsätzlich nicht gefährlicher, als in anderen Betrieben",
+      "21%",
+      "7%",
+      "78%",
+      "45%"
     ],
-    correctIndex: 1,
+    correctIndex: 0,
   },
   {
     id: 10,
     question:
-      "Welche drei Elemente braucht ein Feuer zum Brennen (Feuerdreieck)?",
+      "Warum haben große Gebäude oft eine Brandmeldeanlage (BMA)?",
     options: [
-      "Luft, Wasser, Funken",
-      "Sauerstoff, Brennstoff, Wärme",
-      "Holz, Feuerzeug, Zunder",
-      "Licht, Energie, Wind",
+      "Die Brandmeldeanlage dient nur der Überwachung der Luftqualität",
+      "Die Brandmeldeanlage löscht das Feuer immer automatisch",
+      "Damit bei Feueralarm automatisch alle Fenster geöffnet werden",
+      "Die Brandmeldeanlage dient zur frühen Erkennung von Bränden und alarmiert in der Regel automatisch die Feuerwehr",
     ],
-    correctIndex: 1,
+    correctIndex: 3,
   },
 ];
