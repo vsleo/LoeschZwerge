@@ -1,4 +1,4 @@
-const { test, expect } = require("@playwright/test");
+import { test, expect } from "@playwright/test";
 
 test.describe("Löschzwerge Seite", () => {
   test("Seite lädt und zeigt Slider sowie Inhalte", async ({ page }) => {
