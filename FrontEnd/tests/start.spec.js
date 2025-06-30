@@ -1,53 +1,49 @@
-import { test, expect } from "@playwright/test";
+const { test, expect } = require("@playwright/test");
 
-test.describe("Start.vue", () => {
-  test.beforeEach(async ({ page }) => {
-    // Passe ggf. den Pfad an, falls deine Route anders ist
-    await page.goto("http://localhost:4321/LoeschZwerge/");
-  });
+test.describe("Löschzwerge Seite", () => {
+  test("Seite lädt und zeigt Slider sowie Inhalte", async ({ page }) => {
+    // URL anpassen, falls nötig
+    await page.goto("http://localhost:5173/LoeschZwerge");
 
-  test("Willkommensüberschrift wird angezeigt", async ({ page }) => {
-    await expect(page.locator("h1")).toHaveText(
-      "Willkommen bei den Löschzwergen!",
-    );
-  });
+    // Überschrift prüfen
+    await expect(
+      page.getByRole("heading", { name: "Willkommen bei den Löschzwergen!" }),
+    ).toBeVisible();
 
-  test('Box mit "Die Feuerwehr" und Beschreibung ist sichtbar', async ({
-    page,
-  }) => {
-    await expect(page.locator(".box .heading")).toHaveText("Die Feuerwehr");
-    await expect(page.locator(".box .paragraph")).toContainText(
-      "Die Feuerwehr hat einige wichtige Aufgaben",
-    );
-  });
+    // Slider-Container prüfen
+    const slider = page.locator(".top-slider");
+    await expect(slider).toBeVisible();
 
-  test("Alle Slider-Bilder sind im DOM", async ({ page }) => {
-    const slides = page.locator(".image-slider .slide");
-    await expect(slides).toHaveCount(3);
-    await expect(slides.nth(0)).toHaveAttribute("src", /img-1\.jpg$/);
-    await expect(slides.nth(1)).toHaveAttribute("src", /img-2\.jpg$/);
-    await expect(slides.nth(2)).toHaveAttribute("src", /img-3\.jpg$/);
-  });
+    // Prüfen, ob Slider-Bilder existieren
+    const sliderImages = slider.locator(".slider-track img");
+    await expect(sliderImages).toHaveCountGreaterThan(0);
 
-  test("Das erste Slider-Bild ist beim Laden aktiv", async ({ page }) => {
-    const firstSlide = page.locator(".image-slider .slide").first();
-    await expect(firstSlide).toHaveClass(/active/);
-  });
+    // Box-Überschriften prüfen
+    await expect(
+      page.locator(".box-heading", { hasText: "Feuerwehrauto" }),
+    ).toBeVisible();
 
-  test("Slider wechselt das Bild automatisch", async ({ page }) => {
-    const slides = page.locator(".image-slider .slide");
-    // Warte etwas länger als das Intervall (3s)
-    await page.waitForTimeout(3500);
-    // Mindestens ein anderes Bild sollte jetzt aktiv sein
-    const activeSlides = await slides.evaluateAll(
-      (nodes) => nodes.filter((n) => n.classList.contains("active")).length,
-    );
-    expect(activeSlides).toBe(1);
-    // Es sollte nicht immer das erste Bild aktiv sein
+    await expect(
+      page.locator(".box-heading", { hasText: "Quiz" }),
+    ).toBeVisible();
 
-    const isFirstActive = await slides
-      .nth(1)
-      .evaluate((node) => node.classList.contains("active"));
-    expect(isFirstActive).toBeFalsy();
+    await expect(
+      page.locator(".box-heading", { hasText: "Brandschutz" }),
+    ).toBeVisible();
+
+    // Links prüfen
+    await expect(
+      page.locator('a[href="/LoeschZwerge/car"]'),
+    ).toHaveCountGreaterThan(0);
+    await expect(
+      page.locator('a[href="/LoeschZwerge/quiz"]'),
+    ).toHaveCountGreaterThan(0);
+    await expect(
+      page.locator('a[href="/LoeschZwerge/brandschutz"]'),
+    ).toHaveCountGreaterThan(0);
+
+    // Optional: Klick-Test für einen der Links
+    await page.locator('a[href="/LoeschZwerge/car"]').first().click();
+    await expect(page).toHaveURL(/\/LoeschZwerge\/car/);
   });
 });
