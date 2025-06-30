@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test.describe("Löschzwerge Seite", () => {
   test("Seite lädt und zeigt Slider sowie Inhalte", async ({ page }) => {
     // URL anpassen, falls nötig
-    await page.goto("http://localhost:5173/LoeschZwerge");
+    await page.goto("http://localhost:4321/LoeschZwerge/");
 
     // Überschrift prüfen
     await expect(
