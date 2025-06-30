@@ -32,16 +32,12 @@ test.describe("Löschzwerge Seite", () => {
       page.locator(".box-heading", { hasText: "Brandschutz" }),
     ).toBeVisible();
 
-    /* Links prüfen
-    await expect(
-      page.locator('a[href="/LoeschZwerge/car"]'),
-    ).toHaveCountGreaterThan(0);
-    await expect(
-      page.locator('a[href="/LoeschZwerge/quiz"]'),
-    ).toHaveCountGreaterThan(0);
+    // Links prüfen
+    await expect(page.locator('a[href="/LoeschZwerge/car"]')).toHaveCount(1);
+    await expect(page.locator('a[href="/LoeschZwerge/quiz"]')).toHaveCount(1);
     await expect(
       page.locator('a[href="/LoeschZwerge/brandschutz"]'),
-    ).toHaveCountGreaterThan(0); */
+    ).toHaveCount(1);
 
     // Optional: Klick-Test für einen der Links
     await page.locator('a[href="/LoeschZwerge/car"]').first().click();
