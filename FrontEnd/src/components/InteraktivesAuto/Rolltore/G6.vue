@@ -2,7 +2,7 @@
   <div class="full-section">
     <!-- Übersichtsfoto der Geräteraumtür -->
     <div class="full-img">
-      <img src="images/Rolltore/G1/Geräteraum_G1.jpg" />
+      <img src="images/Rolltore/G6/Geräteraum_G6.png" />
     </div>
 
     <!-- Liste mit klickbaren Einträgen -->
