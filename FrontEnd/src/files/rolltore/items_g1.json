@@ -1,9 +1,9 @@
 [
     {
         "name": "Werkzeugkasten",
-        "description": "",
+        "description": "Die Werkzeugkiste enthält eine Vielzahl von Handwerkzeugen, die für die technische Hilfeleistung benötigt werden. Dazu gehören unter anderem Schraubendreher, Zangen und Schraubenschlüssel.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/werkzeugkiste.avif"
     },
     {
         "name": "Rüstholz",
@@ -13,80 +13,80 @@
     },
     {
         "name": "Elektrowerkzeug",
-        "description": "",
+        "description": "Das Elektrowerkzeug umfasst verschiedenes Werkzeug, welches zur Arbeit an elektrischen Anlagen oder bei der technischen Hilfeleistung eingesetzt wird.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Elektrowerkzeug.jpg"
     },
     {
         "name": "Türöffnungskoffer 1 & 2",
-        "description": "",
+        "description": "Der Tüöfnungskoffer enthält verschiedene Werkzeuge und Hilfsmittel, die für die Türöffnung bei Einsätzen benötigt werden. Er ist in zwei Teile unterteilt, um eine bessere Organisation zu ermöglichen. In den Koffern sind Werkzeuge, wie der Türfallengleiter, das Ziehfix oder auch einfache Dietriche verladen, welche ein schnelles Öffnen von Türen durch geschultes Personal ermöglichen.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Türöffnungskoffer.jpg"
     },
     {
         "name": "Motorkettensäge und Zubehör",
-        "description": "",
+        "description": "Die Motorkettensäge wird in Einsätzen hauptsächlich zum Entfernen und Zerkleinern von Baumstämmen verwendet, welche in der Regel Fahrbahnen oder Privathäuser blockieren oder beschädigen.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Motorkettensäge.jpeg"
     },
     {
         "name": "Schnittschutzhose und Helm",
-        "description": "",
+        "description": "Die Schnittschtzhose, -handschuhe und -helm sind unverzichtbare Schutzausrüstung, welche immer bei Arbeiten mit der Kettensäge angezogen werden.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Schnittschutz.webp"
     },
     {
         "name": "Kelly-Tool",
-        "description": "",
+        "description": "Das Kelly-Tool ist als Aufbrechwerkzeug ein ziemlicher Allrounder. Der Kuhfuß ermöglicht unter anderem das Entfernen von Nägeln oder ähnlichen Objekten, während man die gegenüberliegende Seite perfekt als Hebel zum Aufbrechen von Türen oder ähnlichem nutzen kann.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Kellytool.avif"
     },
     {
         "name": "Spaltaxt",
-        "description": "",
+        "description": "Die Spaltaxt ist ebenfalls ein Feuerwehr-Allrounder. Hauptsächlich dient sie zum Aufbrechen oder Spalten von hölzernen Objekten.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Spaltaxt.jpg"
     },
     {
-        "name": "Bogensäge & Säbelsäge",
-        "description": "",
+        "name": "Bogensäge",
+        "description": "Die Bogensäge dient ebenfalls zum Zersägen von hölzernen Objekten. In der Regel wird sie ausschließlich zum entfernen von kleineren Ästen verwendet, wenn der Gebrauch der Motorkettensäge überdimensioniert ist.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Bogensäge.jpg"
     },
     {
         "name": "VU-Koffer",
-        "description": "",
+        "description": "Der VU(Verkehrsunfall)-Koffer, kommt bei fast jedem VU zum Einsatz. Er beinhaltet verschiedenes Werkzeug, wie den Glasmaster, einer Glassäge zum öffnen von Windschutzscheiben, oder auch Federkörner, Panzertape und eine Decke, damit Verunfallte patientengerecht aus einem Fahrzeug gerettet werden können.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Vu_Koffer.jpg"
     },
     {
         "name": "Ölwanne & Ölbindemittel",
-        "description": "",
+        "description": "Das Ölbindemittel, kommt in der Regel nur noch bei Verkehrsunfällen zum Einsatz, um auslaufende Betriebsstoffe aufzufangen, bevor sie in die Natur gelangen und dort weitere Schäden anrichten können. Ölspuren, welche ohne einen Verkehrsunfall als Auslöser entstehen, werden inzwischen von den Stadtwerken entfernt.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Oelbindemittel.jpg"
     },
     {
         "name": "Chiemsee-Pumpe",
-        "description": "",
+        "description": "Die Chiemseepumpe, dient zum Fördern von großen Wassermengen und kommt häufig bei Unwetterlagen zum Einsatz. Die Wasserfördermenge geht bis zu 2500l Wasser pro Minute.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Chiemseepumpe.jpg"
     },
     {
         "name": "Schaufel",
-        "description": "",
+        "description": "Die Schaufel ist ebenfalls ein Feuerwehr-Allrounder, welcher in verschieden Einsatzszenarien eingesetzt werden kann. Eine ihrer Funktionen ist das aufbrechen von Glutnestern, sodass diese Problemlos abgelöscht werden können.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Schaufel.png"
     },
     {
         "name": "Besen",
-        "description": "",
+        "description": "Die Hauptfunktion des Besens ist das Kehren. Ob bei Einsatz der Kettensäge oder von Ölbindemittel, der Besen findet in den meisten Einsatzszenarien seinen Platz, um die Einsatzstelle sauber zu halten.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Besen.jpg"
     },
     {
         "name": "Warndreieck",
-        "description": "",
+        "description": "Das Warndreieck dient zur Absicherung der Einsatzstelle, um in der Regel eine Gefährdung durch den Straßenverkehr zu minimieren.",
         "visibility": false,
-        "picture": ""
+        "picture": "images/Rolltore/G1/Warndreieck.jpg"
     }
 ]
