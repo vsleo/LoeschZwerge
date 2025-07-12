@@ -2,9 +2,13 @@
 
 import Layout from "../layouts/Layout.astro";
 import HydrantLocation from "../components/HydrantLocation.vue";
+import Header from "../components/Header.vue";
 ---
 
 <Layout>
-  
-  <HydrantLocation client:load />
+  <Header client:load />
+  <HydrantLocation client:load  />
+
 </Layout>
+
+

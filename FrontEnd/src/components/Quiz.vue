@@ -67,10 +67,7 @@ a {
   align-content: center;
   font-size: 3vw;
   font-weight: bold;
-  font-family:
-    "Tiny5",
-    "Pixelify Sans",
-    sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 a img {

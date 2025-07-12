@@ -40,7 +40,7 @@ export default {
     return {
       hotspots: [
         {
-          label: "0",
+          label: "",
           top: "24px",
           left: "109px",
           width: "31px",
@@ -48,7 +48,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "1",
+          label: "",
           top: "24px",
           left: "145px",
           width: "31px",
@@ -56,7 +56,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "2",
+          label: "",
           top: "24px",
           left: "181px",
           width: "31px",
@@ -64,7 +64,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "3",
+          label: "",
           top: "94px",
           left: "26px",
           width: "31px",
@@ -72,7 +72,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "4",
+          label: "",
           top: "94px",
           left: "62px",
           width: "31px",
@@ -80,7 +80,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "5",
+          label: "",
           top: "94px",
           left: "155px",
           width: "31px",
@@ -96,7 +96,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "7",
+          label: "",
           top: "151px",
           left: "89px",
           width: "31px",
@@ -104,7 +104,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "8",
+          label: "",
           top: "151px",
           left: "125px",
           width: "31px",
@@ -112,7 +112,7 @@ export default {
           fontSize: "55px",
         },
         {
-          label: "9",
+          label: "",
           top: "169px",
           left: "171px",
           width: "17px",
@@ -120,7 +120,7 @@ export default {
           fontSize: "25px",
         },
         {
-          label: "10",
+          label: "",
           top: "112px",
           left: "109px",
           width: "17px",
@@ -128,7 +128,7 @@ export default {
           fontSize: "25px",
         },
         {
-          label: "11",
+          label: "",
           top: "112px",
           left: "236px",
           width: "17px",
@@ -136,7 +136,7 @@ export default {
           fontSize: "25px",
         },
         {
-          label: "12",
+          label: "",
           top: "23px",
           left: "218px",
           width: "3px",
@@ -144,7 +144,7 @@ export default {
           fontSize: "10px",
         },
         {
-          label: "13",
+          label: "",
           top: "23px",
           left: "226px",
           width: "3px",
@@ -152,7 +152,7 @@ export default {
           fontSize: "10px",
         },
         {
-          label: "14",
+          label: "",
           top: "23px",
           left: "234px",
           width: "3px",
@@ -160,7 +160,7 @@ export default {
           fontSize: "10px",
         },
         {
-          label: "15",
+          label: "",
           top: "23px",
           left: "242px",
           width: "3px",
@@ -168,7 +168,7 @@ export default {
           fontSize: "10px",
         },
         {
-          label: "16",
+          label: "",
           top: "23px",
           left: " 250px",
           width: "3px",
