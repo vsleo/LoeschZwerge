@@ -1,14 +1,44 @@
 [
     {
-        "name": "LED-Beleuchtungsgerät Peli mit Akku",
-        "description": "Akkubetriebenes, tragbares LED-Gerät zur Ausleuchtung.",
+        "name": "Erste-Hilfe-Koffer",
+        "description": "Der Erste-Hilfe-Koffer enthält alle notwendigen Materialien für die Erstversorgung von Verletzten an der Einsatzstelle. In der Regel wird  die Versorgung von Verunfallten schnellstmöglich durch das besser geschulte Personal des Rettungsdienstes übernommen.",
         "visibility": false,
-        "picture": "images/LED-Beleuchtungsgerät_Peli_mit_Akku.jpg"
+        "picture": "images/Rolltore/G2/EH_Koffer.jpg"
     },
     {
-        "name": "Rüstholz",
-        "description": "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
+        "name": "Schleifkorbtrage & Zubehör",
+        "description": "Die Schleifkorbtrage ist eine spezielle Trage, die für den Transport von Patienten in unwegsamem Gelände oder bei engen Platzverhältnissen verwendet wird. Sie ermöglicht eine sichere und stabile Beförderung. Alternativ können Verunfallte durch die Schleifkorbtrage auch über die Feuerwehrleiter oder Drehleiter gerettet werden.",
         "visibility": false,
-        "picture": "images/Rüstholz.jpg"
+        "picture": "images/Rolltore/G2/Schleifkorbtrage.jpg"
+    },
+    {
+        "name": "Leitkegel",
+        "description": "Die verladenen Leitkegel dienen der Absperrung von Gefahrenstellen und der Sicherung von Einsatzstellen. Sie sind leicht zu transportieren und schnell aufzustellen. Wenn Leitkegel in wäldischen Gebieten auf dem Boden liegen, geben sie oftmals nachrückenden Kräften den Weg zu einem Waldbrand oder einer anderen Gefahrenstelle an (s. Bild).",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/Pylone.webp"
+    },
+    {
+        "name": "Lumaphore",
+        "description": "Die Lumaphore ist ein tragbares Lichtgerät, das bei nächtlichen Einsätzen oder in dunklen Umgebungen eingesetzt wird. Sie sorgt für eine ausreichende Beleuchtung der Einsatzstelle und verbessert die Sichtverhältnisse für die Einsatzkräfte.",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/Lumaphore.webp"
+    },
+    {
+        "name": "Kabeltrommel",
+        "description": "Die Kabeltrommel ist ein wichtiges Hilfsmittel für die Stromversorgung an Einsatzstellen. Sie ermöglicht es, elektrische Geräte und Beleuchtung mit Strom zu versorgen, insbesondere in Bereichen, wo keine feste Stromversorgung vorhanden ist.",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/Kabeltrommel.jpg"
+    },
+    {
+        "name": "Peli-Light",
+        "description": "Das Peli-Light ist eine tragbare, leistungsstarke Lampe, die bei nächtlichen Einsätzen oder in dunklen Umgebungen eingesetzt wird. Sie bietet eine hohe Lichtleistung und ist robust gebaut, um den Anforderungen im Einsatz gerecht zu werden. Das Peli-Light kann durch seine Struktur problemlos auf dem Boden stehen und ist somit im Dunkeln unverzichtbar.",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/Peli_Light.jpg"
+    },
+    {
+        "name": "Absperrlicht",
+        "description": "",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/"
     }
 ]
