@@ -1,14 +1,51 @@
 [
     {
-        "name": "LED-Beleuchtungsgerät Peli mit Akku",
-        "description": "Akkubetriebenes, tragbares LED-Gerät zur Ausleuchtung.",
+        "name": "Kombi-Schaumrohr M4/S4",
+        "description": "Das Kombi-Schaumrohr M4/S4 liefert bei einem Nenndruck von 5 bar eine Durchflussmenge von 400 l/min. Durch den Hebel an der Seite kann der Benutzer zwischen Mittel- (M4) und Schwerschaum (S4) wechseln. Der Einsatz von Schaum wird durch den Gruppenführer befohlen, um dem Feuer durch den Schaumteppich den Sauerstoff zu entziehen. Schaum ist ein Gemisch aus Schaummittel, Wasser und Luft, wobei der Luftanteil den Unterschied zwischen Schwer- und Mittelschaum macht. Schwerschaum ist luftärmer und somit schwerer, während Mittelschaum luftreicher und somit leichter ist.",
         "visibility": false,
-        "picture": "images/LED-Beleuchtungsgerät_Peli_mit_Akku.jpg"
+        "picture": "images/Rolltore/G4/Kombi_Schaumrohr.jpg"
     },
     {
-        "name": "Rüstholz",
-        "description": "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
+        "name": "2x C-Hohlstrahlrohr",
+        "description": "Das C-Hohlstrahlrohr ist ein vielseitiges Strahlrohr, das grundsätzlich für die Brandbekämpfung mit Wasser verwendet wird. Es kann an verschiedene Druckverhältnisse angepasst werden und ermöglicht eine präzise Steuerung des Wasserstrahls. Das Rohr ist mit einem speziellen Düsenkopf ausgestattet, der den Wasserstrahl in einen feinen Nebel verwandelt, was die Kühlung und Löschung von Bränden effektiver macht. Man kann das C-Hohlstrahlrohr auch mit Netzmittel betreiben, welches bei der Brandbekämpfung hilft, indem es die Oberflächenspannung des Wassers reduziert und somit eine bessere Eindringtiefe in brennende Materialien ermöglicht.",
         "visibility": false,
-        "picture": "images/Rüstholz.jpg"
+        "picture": "images/Rolltore/G4/C_Hohlstrahlrohr.png"
+    },
+    {
+        "name": "1x C-Mehrzweckstrahlrohr",
+        "description": "Das C-Mehrzweckstrahlrohr ist ein flexibles Strahlrohr, das für verschiedene Anwendungen in der Brandbekämpfung eingesetzt werden kann. Es ist mit einer speziellen Düse ausgestattet, die es ermöglicht, den Wasserstrahl in verschiedene Modi zu schalten, darunter Sprühstrahl und Vollstrahl. Diese Anpassungsfähigkeit macht es ideal für unterschiedliche Brandarten und Einsatzszenarien. Das Mehrzweckstrahlrohr kann auch mit Netzmittel betrieben werden, um die Löschwirkung zu verbessern. Das Strahlrohr liefert mit Mundstück bei 5 bar Nenndruck 100 l/min und ohne Mundstück 200 l/min.",
+        "visibility": false,
+        "picture": "images/Rolltore/G4/C_Mehrzweckstrahlrohr.png"
+    },
+    {
+        "name": "2x B-Mehrzweckstrahlrohr",
+        "description": "Das B-Mehrzweckstrahlrohr ist ein leistungsstarkes Strahlrohr, das für die Brandbekämpfung mit Wasser und Netzmittel konzipiert ist. Es bietet eine hohe Durchflussmenge und kann an verschiedene Druckverhältnisse angepasst werden. Mit einem Nenndruck von 5 bar liefert es mit Mundstück eine Durchflussmenge von 200 l/min. Ohne Mundstück schafft das Strahlrohr 400 l/min. Das Strahlrohr ist vielseitig einsetzbar und eignet sich sowohl für die Bekämpfung von Bränden als auch für Kühlmaßnahmen. Der Strahl des B-Mehrzweckstrahlrohrs kann in verschiedene Modi geschaltet werden, um die Löschwirkung zu optimieren. Das B-Mehrzweckstrahlrohr kann mit Stützkrümmer von zwei Personen und ohne Stützkrümmer von drei Personen bedient werden.",
+        "visibility": false,
+        "picture": "images/Rolltore/G4/B_Mehrzweckstrahlrohr.png"
+    },
+    {
+        "name": "Hydrantenschlüssel (Unterflur)",
+        "description": "Der Hydrantenschlüssel ist ein spezielles Werkzeug, das verwendet wird, um Hydranten zu öffnen und zu schließen. Er ist in der Regel aus robustem Metall gefertigt und hat eine spezielle Form, die es ermöglicht, die Hydrantendeckel zu greifen und zu drehen. Der Schlüssel ist ein unverzichtbares Hilfsmittel für Feuerwehrleute, um schnell auf Wasserquellen zugreifen zu können, insbesondere bei Brandeinsätzen. Der Hydrantenschlüssel ist so konzipiert, dass er auf die meisten Standardhydranten passt. Es wird zwischen Über- und Unterflurhydrantenschlüsseln unterschieden.",
+        "visibility": false,
+        "picture": "images/Rolltore/G4/Hydrantenschlüssel.jpg"
+    },
+    {
+        "name": "Hydrantenschlüssel (Überflur)",
+        "description": "Der Hydrantenschlüssel für Überflurhydranten ist ein spezielles Werkzeug, das verwendet wird, um Überflurhydranten zu öffnen und zu schließen. Er ist ähnlich wie der Unterflurhydrantenschlüssel, jedoch speziell für die Form und Größe von Überflurhydranten ausgelegt. Überflurhydranten lassen sich in Deutschland hauptsächlich in Industriegebieten finden, wo sie für die Feuerwehr leicht zugänglich sind. Der Schlüssel ermöglicht es den Feuerwehrleuten, schnell auf Wasserquellen zuzugreifen, um auch größere Brände effektiv zu bekämpfen.",
+        "visibility": false,
+        "picture": "images/Rolltore/G4/Hydrantenschlüssel_Überflur.jpg"
+    },
+    {
+        "name": "Hydrantenstock",
+        "description": "Der Hydrantenstock wird in Unteflurhydranten verbaut und ist das Verbindungselement zwischen dem Hydranten und der Feuerwehrschlauchleitung. Er wird inzwischen immer mit dem Systemtrenner verbaut, um den Rückfluss von kontaminiertem Wasser in die öffentliche Wasserversorgung zu verhindern.",
+        "visibility": false,
+        "picture": "images/Rolltore/G4/Hydrantenstock.jpg"
+    },
+    {
+        "name": "4x B-Druckschlauch",
+        "description": "Durchmesser 75mm; Länge 20m; Förderleistung bei 8-10 bar bis zu 800 Liter Wasser pro Minute: B-Druckschläuche eignen sich ideal für eine Wasserversorgung über lange Wegstrecken, sowie zur Brandbekämpfung bei Großbränden. Die Wasserversorgung zum Löschfahrzeug und vom Löschfahrzeug zum Verteiler wird ebenfalls durch B-Druckschläuche garantiert.",
+        "visibility": false,
+        "picture": "images/Rolltore/G5/B_Druckschlauch.jpg"
     }
+    
 ]

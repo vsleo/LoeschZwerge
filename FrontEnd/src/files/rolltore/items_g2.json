@@ -36,9 +36,27 @@
         "picture": "images/Rolltore/G2/Peli_Light.jpg"
     },
     {
-        "name": "Absperrlicht",
-        "description": "",
+        "name": "Warnlampe",
+        "description": "Die Warnlampe ist ein wichtiges Sicherheitsgerät, das bei Einsätzen verwendet wird, um Verkehrsteilnehmer auf eine Gefahrenstelle hinzuweisen. Die Warnlampe ist im Straßenverkehr essentiell, um die Sicherheit der Einsatzkräfte zu gewährleisten und weitere Unfälle zu vermeiden.",
         "visibility": false,
-        "picture": "images/Rolltore/G2/"
+        "picture": "images/Rolltore/G2/Warnlampe.jpg"
+    },
+    {
+        "name": "Stativ",
+        "description": "Das Stativ dient als stabile Basis für die Lumaphore, um diese in der richtigen Höhe und Position zu halten, um eine optimale Beleuchtung der Einsatzstelle zu gewährleisten.",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/Stativ.webp"
+    },
+    {
+        "name": "Aggregat",
+        "description": "Das Aggregat liefert als tragbarer Stromerzeuger eine unabhängige Stromversorgung für elektrische Geräte und Beleuchtung an Einsatzstellen. In Unwetterlagen und anderen Situationen in denen die Feuerwehr auf ihre elektrischen Geräte angewiesen ist, ist das Aggregat unverzichtbar. Im verladenen Zustand ist es mit dem Dieseltank des Fahrzeugs verbunden, wobei es jedoch auch autark über einen eigenen Tank betrieben werden kann.",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/Aggregat.jpg"
+    },
+    {
+        "name": "TP-400",
+        "description": "Die Tp-400 ist eine tragbare Tauchpumpe, die bei Hochwasser- und Überschwemmungseinsätzen eingesetzt wird. Sie ermöglicht das schnelle Abpumpen von Wasser aus überfluteten Bereichen und trägt so zur Schadensbegrenzung bei. Sie ist mit einer Pumpleistung von 400 Litern pro Minute schwächer als die Chiemsee-Pumpe, jedoch durch ihre kompakte Bauweise und das geringe Gewicht flexibler einsetzbar.",
+        "visibility": false,
+        "picture": "images/Rolltore/G2/TP_400.jpg"
     }
 ]
