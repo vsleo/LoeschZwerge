@@ -1,15 +1,33 @@
 [
     {
-        "name": "LED-Beleuchtungsgerät Peli mit Akku",
-        "description": "Akkubetriebenes, tragbares LED-Gerät zur Ausleuchtung.",
+        "name": "2x Schlauchbrücke",
+        "description": "Die Schlauchbrücke ermöglicht das Überqueren von Feuerwehrschläuchen, ohne diese zu beschädigen. Sie ist aus robustem Gummi gefertigt und hat eine spezielle Form, die es ermöglicht, Fahrzeuge sicher über die Schläuche zu leiten.",
         "visibility": false,
-        "picture": "images/LED-Beleuchtungsgerät_Peli_mit_Akku.jpg"
+        "picture": "images/Rolltore/G6/Schlauchbrücke.png"
     },
     {
-        "name": "Rüstholz",
-        "description":
-        "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
+        "name": "6x B-Druckschlauch",
+        "description": "Durchmesser 75mm; Länge 20m; Förderleistung bei 8-10 bar bis zu 800 Liter Wasser pro Minute: B-Druckschläuche eignen sich ideal für eine Wasserversorgung über lange Wegstrecken, sowie zur Brandbekämpfung bei Großbränden. Die Wasserversorgung zum Löschfahrzeug und vom Löschfahrzeug zum Verteiler wird ebenfalls durch B-Druckschläuche garantiert.",
         "visibility": false,
-        "picture": "images/Rüstholz.jpg"
+        "picture": "images/Rolltore/G5/B_Druckschlauch.jpg"
+    },
+    {
+        "name": "Kübelspritze",
+        "description": "Die Kübelspritze ist ein handbetriebenes Kleinlöschgerät, das für die Bekämpfung kleinerer Brände eingesetzt wird. Sie ist mit einem speziellen Spritzrohr ausgestattet, das es ermöglicht, Wasser gezielt auf den Brandherd zu spritzen. Die Kübelspritze ist leicht und tragbar, was sie ideal für den Einsatz in engen Räumen oder bei kleineren Bränden macht. Sie findet ihren Anwendungsbereich bei Mülltonnen- bzw kleinen Vegetationsbränden.",
+        "visibility": false,
+        "picture": "images/Rolltore/G6/Kübelspritze.webp"
+    },
+    {
+        "name": "CO2-Löscher",
+        "description": "Der CO2-Löscher ist ein tragbarer Feuerlöscher, der mit Kohlendioxid gefüllt ist. Er wird hauptsächlich zur Bekämpfung von Bränden in elektrischen Geräten oder bei kleinen Metallbränden eingesetzt, da CO2 keine Rückstände hinterlässt und somit empfindliche Geräte nicht beschädigt. Der Löscher funktioniert, indem er den Sauerstoff um den Brandherd verdrängt, wodurch die Flammen ersticken. CO2-Löscher sind in verschiedenen Größen erhältlich und eignen sich für den Einsatz in Büros, Werkstätten und anderen Bereichen, in denen elektrische Geräte vorhanden sind. Bei der Benutzung muss man auf die Austrittsrichtung des Kohlenstoffdioxids achten, da dieses durch den hohen Druck im Behälter stark gekühlt entweicht und Kälteverbrennungen verursachen kann.",
+        "visibility": false,
+        "picture": "images/Rolltore/G6/CO2_Löscher.jpg"
+    },
+    {
+        "name": "Pulverlöscher",
+        "description": "Der verladene ABC-Pulverlöscher, kann zur Bekämpfung von Bränden der Brandklassen A, B und C eingesetzt werden. Die Brandklasse A umfasst alle brennbare, feste Stoffe, welcher unter Glutbildung verbrennen, Brandklasse B alle brennbare Flüssigkeiten oder verflüssigte Stoffe und Brandklasse C auf alle brennbare Gase wie Methan, Propan oder Butan.",
+        "visibility": false,
+        "picture": "images/Rolltore/G6/Pulverlöscher.jpg"
     }
+
 ]
