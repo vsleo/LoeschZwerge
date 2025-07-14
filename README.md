@@ -67,13 +67,12 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
     Die Seite soll stark Kontent-Basiert sein und durch gezielt gewählte Bilder die richtige Erste-Hilfe vermitteln,
     welche selbst durch Laien problemlos durchgeführt werden kann.
 
-<br>
+<p>
 ### **Informationen über den Standardangriff nach FwDv3**
     Außerdem ist es vorgesehen, durch eine interaktive Karte den standard Löschangriff nach FwDv3 zu erläutern. 
     Hierbei soll ein Schema genutzt werden, das durch interaktive Hotspots das Wissen spielerisch vermittelt. 
-    Das Schema repräsentiert den Fertig aufgebauten Löschangriff.
-<br>
-
+    Das Schema repräsentiert den Fertig aufgebauten Löschangriff.<br>
+</p>
 ### **Visuelle Anpassung an Mobile-Geräte und verschiedene Browser**
     In Zukunft soll die visuelle Darstellung ebenfalls auf verschiedene Browser, sowie an die Mobile-Nutzung angepasst werden.
 
