@@ -43,7 +43,7 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
 <br>
 
 ## **Wie erreicht man die Website**
-    Es gibt zwei Wege, um die Website zu erreichen, welche sich in der reinen Benutzung jedoch nicht unterscheiden.
+    *Es gibt zwei Wege, um die Website zu erreichen.*
 
 ### **1. Aufrufen durch GitHub-Pages (für normale Nutzer empfohlen)**
     Der einfache Weg, um die Website zu erreichen, ist über den GitHub-Pages-Link:  
@@ -59,17 +59,6 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
     4. Durch das Kommando "npm run dev" den local host starten
     5. Interaktion mit folgendem Link im Terminal "http://localhost:xxxx/LoeschZwerge/"
 [**Inhaltsverzeichnis**](#inhaltsverzeichnis)
-
-<br>
-### **2. Starten durch local host (für Entwickler empfohlen)**
-    1. Projekt über GitHub klonen oder als zip-Datei herunterladen
-    2. Das Terminal der Entwicklungsumgebung öffnen
-    3. Durch das Kommando "npm install" alle notwendigen Dependencies installieren
-    4. Durch das Kommando "npm run dev" den local host starten
-    5. Interaktion mit folgendem Link im Terminal "http://localhost:xxxx/LoeschZwerge/"
-[**Inhaltsverzeichnis**](#inhaltsverzeichnis)
-
-<br>
 
 ## **Geplanter Kontent und Features für die Zukunft**
 
