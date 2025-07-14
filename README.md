@@ -3,12 +3,6 @@
 **LöschZwerge ist eine interaktive Lernwebsite, welche, unabhängig vom Alter, versucht das Feuerwehrwesen spielerisch näher zu bringen.
 Das Ziel der Website ist es, durch unser interaktives Feuerwehrauto, Lernvideos oder ähnlichem Kontent Wissen anzueignen, welches daraufhin in einem passenden Quiz abgefragt wird. Dabei werden Grundlagen der Feuerwehr, aber auch komplexere Themen berücksichtigt.**
 
-<br>
-**LöschZwerge ist eine interaktive Lernwebsite, welche, unabhängig vom Alter, versucht das Feuerwehrwesen spielerisch näher zu bringen.
-Das Ziel der Website ist es, durch unser interaktives Feuerwehrauto, Lernvideos oder ähnlichem Kontent Wissen anzueignen, welches daraufhin in einem passenden Quiz abgefragt wird. Dabei werden Grundlagen der Feuerwehr, aber auch komplexere Themen berücksichtigt.**
-
-<br>
-
 # **Inhaltsverzeichnis** 
 # **Inhaltsverzeichnis** 
 1. [**Übersicht der Website**](#übersicht-der-website)
@@ -27,11 +21,7 @@ Die Website ist grundsätzlich in drei Teile aufgebaut. Es gibt die Startseite, 
 
 [**Inhaltsverzeichnis**](#inhaltsverzeichnis)
 
-<br>
-
 ## **Besondere Funktionen**
-
-<br>
 
 **Interaktive Rolltore**
 
@@ -39,8 +29,6 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
 ![](FrontEnd/public/README/Website_Showcase/G3_Showcase.png)
 
 [**Inhaltsverzeichnis**](#inhaltsverzeichnis)
-
-<br>
 
 ## **Wie erreicht man die Website**
     Es gibt zwei Wege, um die Website zu erreichen.
