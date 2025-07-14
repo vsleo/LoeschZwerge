@@ -21,28 +21,30 @@
       >
         {{ hotspot.label }}
 
-        <div v-if="currentIndex === 3" class="front-box" style="left:-80%">
+        <div v-if="currentIndex === 3" class="front-box" style="left: -80%">
           <h1 class="box-heading">LF-10</h1>
           <p class="box-paragraph">
-            Das abgebildete Fahrzeug basiert auf dem 26/42/1, dem LF-10 (Löschgruppenfahrzeug) des LB26 Eschringen.<br>
-            Ein Löschgruppenfahrzeug ist für Brände und einfache technische Hilfeleistungen ausgestattet.
-            Das Fahrzeug kann eine Löschgruppe unterbringen, was einer Mannschaft von 9 Personen entspricht.
+            Das abgebildete Fahrzeug basiert auf dem 26/42/1, dem LF-10
+            (Löschgruppenfahrzeug) des LB26 Eschringen.<br />
+            Ein Löschgruppenfahrzeug ist für Brände und einfache technische
+            Hilfeleistungen ausgestattet. Das Fahrzeug kann eine Löschgruppe
+            unterbringen, was einer Mannschaft von 9 Personen entspricht.
           </p>
         </div>
 
-        <div v-if="currentIndex === 3" class="front-box" style="left:180%">
+        <div v-if="currentIndex === 3" class="front-box" style="left: 180%">
           <h2 class="box-heading">Technische Daten</h2>
           <p class="box-paragraph">
-             Leergewicht:<br>
-             Gesamtgewicht: 14t<br>
-             Leistung:<br>
-             Pumpe: FPN 10-1000<br>
-             Wassertank: 1200l<br>
-             Schaumtank: 120l<br>
-             Fahrgestell: Volvo<br>
-             Aufbau: Schlingmann
+            Leergewicht:<br />
+            Gesamtgewicht: 14t<br />
+            Leistung:<br />
+            Pumpe: FPN 10-1000<br />
+            Wassertank: 1200l<br />
+            Schaumtank: 120l<br />
+            Fahrgestell: Volvo<br />
+            Aufbau: Schlingmann
           </p>
-        </div> 
+        </div>
       </a>
     </div>
     <button class="nav-button left" @click="prev">
@@ -139,9 +141,9 @@ const images = [
         left: "32.3%",
         width: "35.9%",
         height: "39.2%",
-        label: ""
-      }
-    ]
+        label: "",
+      },
+    ],
   },
 ];
 
@@ -155,7 +157,6 @@ function next() {
 </script>
 
 <style scoped>
-
 .image-wrapper {
   max-width: 52vw;
   margin: 0 auto;
@@ -200,6 +201,31 @@ function next() {
   cursor: pointer;
 }
 
+.front-box {
+  position: absolute;
+  height: 110%;
+  width: 80%;
+  transform: translateX(-50%);
+  background: linear-gradient(to top, #111111, #3e3e3e);
+  color: white;
+  padding: 8px 20px;
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 20;
+  font-size: 0.9rem;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  pointer-events: none;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .hotspot {
   position: absolute;
   background-color: transparent;
@@ -232,29 +258,6 @@ function next() {
   opacity: 1;
 }
 
-.front-box {
-  position: absolute;
-  height: 110%;
-  width: 80%;
-  transform: translateX(-50%);
-  background: linear-gradient(to top, #111111, #3e3e3e);
-  color: white;
-  padding: 8px 20px;
-  box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  white-space: nowrap;
-  z-index: 20;
-  font-size: 0.9rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  pointer-events: none;
-
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
 .box-heading {
   color: lightcoral;
   font-size: 1.5rem;
@@ -264,6 +267,4 @@ function next() {
   font-size: 1rem;
   text-align: left;
 }
-
-
 </style>

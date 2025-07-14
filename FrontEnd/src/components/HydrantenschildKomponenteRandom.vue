@@ -1,7 +1,7 @@
 <template>
   <div class="hydrantenschild">
     <img
-      src="images/Hydrantenschild.png"
+      src="images/Hydrantenschild_ohne_frames.png"
       alt="Hydrantenschild"
       class="hydrantenschild"
     />
