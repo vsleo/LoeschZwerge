@@ -2,9 +2,11 @@
 import Header from "../components/Header.vue";
 import Layout from "../layouts/Layout.astro";
 import G_4 from "../components/InteraktivesAuto/Rolltore/G4.vue";
+import Tooltip from "../components/Tooltip.vue";
 ---
 
 <Layout>
   <Header />
   <G_4 client:load />
+  <Tooltip client:load index="4" />
 </Layout>

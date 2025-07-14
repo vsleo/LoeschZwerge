@@ -206,7 +206,7 @@ export default {
         `${hotspots[0].label}${hotspots[1].label}${hotspots[2].label}`,
       ),
       richtungLinks: Number(
-        `${hotspots[3].label}${hotspots[4].label}.${hotspots[10].label}`,
+        `${hotspots[3].label}${hotspots[4].label}.${linksDecimal}`,
       ),
       richtungRechts: Number(
         `${hotspots[5].label}${hotspots[6].label}.${rechtsDecimal}`,

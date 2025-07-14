@@ -13,14 +13,7 @@
         >
           Feuerwehrauto</a
         >
-        <a
-          href="/LoeschZwerge/about"
-          :class="{
-            active: currentPath === '/about' || currentPath === '/about/',
-          }"
-        >
-          About us</a
-        >
+
         <a
           href="/LoeschZwerge/quiz"
           :class="{
@@ -30,13 +23,13 @@
           Quiz</a
         >
         <a
-          href="/LoeschZwerge/brandschutz"
+          href="/LoeschZwerge/lernvideos"
           :class="{
             active:
-              currentPath === '/brandschutz' || currentPath === '/brandschutz/',
+              currentPath === '/lernvideos' || currentPath === '/lernvideos/',
           }"
         >
-          Brandschutz</a
+          Lernvideos</a
         >
         <a
           href="/LoeschZwerge/hydrantdemo"
@@ -44,7 +37,15 @@
             active:
               currentPath === '/hydrantdemo' || currentPath === '/hydrantdemo/',
           }"
-          >Hydrantdemo</a
+          >Hydranten-Game</a
+        >
+        <a
+          href="/LoeschZwerge/about"
+          :class="{
+            active: currentPath === '/about' || currentPath === '/about/',
+          }"
+        >
+          About us</a
         >
       </nav>
     </div>
@@ -85,21 +86,21 @@ header {
 
   &::before {
     background: linear-gradient(
-        135deg,
-        #0b0c2a 0%,
-        #1a1a40 25%,
-        #3c1053 50%,
-        #6f42c1 75%,
-        #00c9ff 100%
-      );
-      box-shadow: 0 5px 10px rgb(255 255 255 / 50%);
-      content: "";
-      inset: 0;
-      position: fixed;
-      background-size: cover;
-      opacity: 0.9;
-      z-index: 5; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
-      height: 5vw;
+      135deg,
+      #0b0c2a 0%,
+      #1a1a40 25%,
+      #3c1053 50%,
+      #6f42c1 75%,
+      #00c9ff 100%
+    );
+    box-shadow: 0 5px 10px rgb(255 255 255 / 50%);
+    content: "";
+    inset: 0;
+    position: fixed;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 5; /* Stellt sicher, dass der Hintergrund hinter dem Inhalt liegt */
+    height: 5vw;
   }
 }
 
@@ -127,7 +128,7 @@ header img {
   top: 2vw; /* Abstand vom oberen Rand */
   left: 2vw; /* Abstand vom linken Rand */
   transition-property: transform;
-  transition-duration: .125s;
+  transition-duration: 0.125s;
 }
 
 .headline a:hover img {
@@ -158,7 +159,7 @@ nav {
   border-radius: 6px;
   height: 1vw;
   transition-property: background-color;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 
   /* Hover Effect */
   &:hover {
