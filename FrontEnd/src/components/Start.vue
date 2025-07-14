@@ -22,13 +22,6 @@
       <h1>Willkommen bei den Löschzwergen!</h1>
     </div>
 
-    <!-- <div class="wrapper center">
-      <p class="paragraph">
-        Was genau ist die Feuerwehr? Und was macht sie überhaupt?<br />
-        Bei den Löschzwergen lernst du mit Spiel und Spaß alles rund ums Feuerwehrauto!
-      </p>
-    </div> -->
-
     <div class="wrapper content-section">
       <div class="box">
         <h2 class="box-heading">Feuerwehrauto</h2>
@@ -183,12 +176,6 @@ a:hover {
   text-align: center;
 }
 
-.img-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 33.5vw;
-}
-
 .image {
   height: 300px;
   transition: transform 0.3s ease-out;
@@ -200,12 +187,17 @@ a:hover {
   cursor: pointer;
 }
 
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 33.5vw;
+}
+
 .top-slider {
   width: 100vw;
   height: 230px;
   overflow: hidden;
   position: relative;
-  background-color: black;
   box-shadow: 0 5px 10px rgb(255 255 255 / 70%);
 }
 
