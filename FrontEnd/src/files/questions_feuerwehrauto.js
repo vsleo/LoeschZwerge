@@ -45,11 +45,11 @@ export const importedQuestions = [
   {
     id: 15,
     question:
-      "Welche Nennrettungshöhe und Nennausladung hat eine Drehleiter (DLK) 23/12",
-    options: ["23m Nennrettungshöhe und 12m Nennausladung",
-              "23m Nennrettungshöhe und 23m Nennausladung",
-              " 12m Nennrettungshöhe und 23m Nennausladung",
-              "23m Nennrettungshöhe und 23m Nennausladung"
+      "Welche Nennrettungshöhe hat die vierteilige Steckleiter?",
+    options: ["7,20m",
+              "6,50m",
+              "8,00m",
+              "5,40m"
             ],
     correctIndex: 0,
   },
