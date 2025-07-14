@@ -69,6 +69,9 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
     Hierbei soll ein Schema genutzt werden, das durch interaktive Hotspots das Wissen spielerisch vermittelt. 
     Das Schema repräsentiert den Fertig aufgebauten Löschangriff.
 
+### **Visuelle Anpassung an Mobile-Geräte und verschiedene Browser**
+    In Zukunft soll die visuelle Darstellung ebenfalls auf verschiedene Browser, sowie an die Mobile-Nutzung angepasst werden.
+
 [**Inhaltsverzeichnis**](#inhaltsverzeichnis)
 
 
