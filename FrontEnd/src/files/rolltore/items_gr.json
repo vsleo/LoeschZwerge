@@ -1,15 +1,82 @@
 [
     {
-        "name": "LED-Beleuchtungsgerät Peli mit Akku",
-        "description": "Akkubetriebenes, tragbares LED-Gerät zur Ausleuchtung.",
+        "name": "Feuerlöschkreiselpumpe Normaldruck (FPN)",
+        "description": "Die FPN ist die verbaute Pumpe im Löschfahrzeug. Sie ist für die Wasserförderung und je nach Fahrzeug auch für die Schaumerzeugung zuständig. Bei einem LF 10, liefert die FPN 1000 l/min bei 10 bar. Hierbei sind 10 bar Nenndruck der neue Standard. Die Pumpe eines LF 12 würde dementsprechend 1200 l/min liefern. Die Pumpe im gezeigten LF 10 greift auf einen Wassertank von 1200 Litern und einen Schaummitteltank von 120 Litern zu.",
         "visibility": false,
-        "picture": "images/LED-Beleuchtungsgerät_Peli_mit_Akku.jpg"
+        "picture": "images/Rolltore/Gr/FPN.png"
     },
     {
-        "name": "Rüstholz",
-        "description":
-        "Rüstholz ist ein wichtiges Hilfsmittel bei der technischen Hilfeleistung. Es wird verwendet, um Fahrzeuge zu stabilisieren und zu sichern.",
+        "name": "Atemschutzüberwachung",
+        "description": "Die Atemschutzüberwachung besteht aus einem Brett mit Eieruhren und einem Stift. Sie wird durch den Gruppenführer durchgeführt. Er kann diese Aufgabe z.B. auch an den Machinisten weitergeben, wobei die Verantwortung weiterhin bei dem Gruppenführer liegt. In der Atemschutzüberwachung werden die Namen und Einsatzzeiten von Atemschutzgeräteträgern aufgeschrieben, damit diese eine weitere Prüfinstanz für ihre Einsatzdauer haben.",
         "visibility": false,
-        "picture": "images/Rüstholz.jpg"
+        "picture": "images/Rolltore/Gr/Atemschutzüberwachung.jpg"
+    },
+    {
+        "name": "kurzer B-Rollschlauch",
+        "description": "Der kurze B-Rollschlauch ist mit seinen 5 Metern Länge nur für kurze Wege geeignet. Er wird hauptsächlich als Ergänzung verwendet, wenn ein weiterer B-Schlauch mit voller Länge nicht benötigt wird. Der Schlauch wird in der Regel zum Füllen des Wassertanks verwendet, damit man nicht immer den langen B-Schlauch ausrollen muss.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/B_Rollschlauch.jpg"
+    },
+    {
+        "name": "Pumpensammelstück",
+        "description": "Das Pumpensammelstück ist ein Verbindungsstück, welches an die Pumpe angeschlossen wird. Es hat mehrere Eingänge, um mehrere Schläuche gleichzeitig zu bedienen. Es wird verwendet, um die Wasserförderung zu optimieren. Das Pumpensammelstück ermöglicht den Eingang von mehreren Hydranten oder auch Fahrzeugen.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Sammelstück.jpg"
+    },
+    {
+        "name": "Arbeitsleine",
+        "description": "Die Arbeitsleine ist ein vielseitiges Hilfsmittel, welches zum Befestigen, Sichern, oder Ziehen von Gegenständen verwendet wird. Arbeitsleinen sind ausgemusterte Rettungsleinen, welche bereits im Einsatz waren und nicht mehr zur Personenrettung zugelassen sind. Sie sind durch ihre rote Markierung von Rettungsleinen zu unterscheiden. ",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Arbeitsleine.jpg"
+    },
+    {
+        "name": "Schmutzfang",
+        "description": "Der Schmutzfang ist ein Gitter, welches in Kombination mit den A-Saugschläuchen und dem A-Saugkorb verwendet wird. Er wird um den Saugkorb gestülpt, um grobe Verunreinigungen zu filtern.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Schmutzfang.png"
+    },
+    {
+        "name": "Saugkorb",
+        "description": "Der Saugkorb wird als Kopf der Saugleitung am Ende der A-Saugschläuche angebracht. Er dient dazu, Wasser aus offenen Gewässern zu entnehmen. Der Saugkorb verhindert, dass größere Gegenstände in die Saugleitung gelangen und die Pumpe beschädigen. Er ist mit einem Ventil ausgestattet, welches zum Öffnen und Schließen mit einer Arbeitsleine verbunden wird",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Saugkorb.jpg"
+    },
+    {
+        "name": "Kupplungsschlüssel",
+        "description": "Die Kupplungsschlüssel sind spezielle Werkzeuge, welche zum Kuppeln von A- oder B-Kupplungen verwendet werden.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Kupplungsschlüssel.jpg"
+    },
+    {
+        "name": "Systemtrenner",
+        "description": "Der Systemtrenner ist ein wichtiger Bestandteil der modernen Feuerwehrtechnik. Er wird unmittelbar hinter dem Hydranten verbaut, um den Rückfluss von dreckigem Wasser über die Schläuche in das Hydrantennetz zu verhindern. Die Pfeile geben die vorgesehene Fließrichtung des Wassers an. Sie sollten immer weg vom Hydranten zeigen.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Systemtrenner.png"
+    },
+    {
+        "name": "4x A-Saugschlauch (Dach)",
+        "description": "Die A-Saugschläuche dienen zur Wasserentnahme aus offenen Gewässern. Sie werden in Kombination mit Saugkorb, Schmutzfang und einer Arbeitsleine eingesetzt und können mit einer tragbaren Pumpe wie der TS 8/8 (PFPN - portable FPN) oder der FPN verbunden werden.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/A_Saugschlauch.jpg"
+    },
+    {
+        "name": "4x Steckleiterteile (Dach)",
+        "description": "Die 4-Teilige Steckleiter ist eine tragbare Leiter, die aus vier Teilen besteht. Sie wird verwendet, um Höhenunterschiede zu überwinden und kann in verschiedenen Konfigurationen eingesetzt werden. Die Teile können einzeln oder in Kombination verwendet werden, um die gewünschte Höhe zu erreichen. Die einzelnen Teile können ebenfalls in Kombination mit Spanngurten zum Absichern von umgekippten Fahrzeugen genutzt werden. Die Leiter hat mit allen vier Teilen eine Nennrettungshöhe von 7,20 Meter und kann somit das 2. OG von Wohnhäusern erreichen. Aufgrund des leichten, aber robusten Materials ist die Steckleiter ein richtiger Allrounder.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Steckleiter.jpg"
+    },
+    {
+        "name": "Einreißhaken (Dach)",
+        "description": "Der Einreißhaken wird verwendet, um Dächer, Decken oder ähnliches zu öffnen und Zugang zu Glutnestern zu ermöglichen.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Einreißhaken.jpg"
+    },
+    {
+        "name": "Lichtmast (Dach)",
+        "description": "Der Lichtmast ist ein elektrisch betriebener Mast, welcher auf dem Dach des Löschfahrzeugs montiert ist. Er kann ausgefahren werden, um eine große Fläche zu beleuchten. Der Lichtmast ist mit mehreren Scheinwerfern ausgestattet, die eine hohe Lichtleistung bieten und somit auch bei Dunkelheit für gute Sichtverhältnisse sorgen. Die Fernbedienung des Lichtmastes befindet sich neben der Pumpe.",
+        "visibility": false,
+        "picture": "images/Rolltore/Gr/Lichtmast.jpg"
     }
+    
+    
 ]

@@ -6,10 +6,16 @@
         "picture": "images/Rolltore/G6/Schlauchbrücke.png"
     },
     {
-        "name": "6x B-Druckschlauch",
+        "name": "7x B-Druckschlauch",
         "description": "Durchmesser 75mm; Länge 20m; Förderleistung bei 8-10 bar bis zu 800 Liter Wasser pro Minute: B-Druckschläuche eignen sich ideal für eine Wasserversorgung über lange Wegstrecken, sowie zur Brandbekämpfung bei Großbränden. Die Wasserversorgung zum Löschfahrzeug und vom Löschfahrzeug zum Verteiler wird ebenfalls durch B-Druckschläuche garantiert.",
         "visibility": false,
         "picture": "images/Rolltore/G5/B_Druckschlauch.jpg"
+    },
+    {
+        "name": "D-Druckschlauch",
+        "description": "Der D-Druckschlauch hat einen Durchmesser von 25mm und eine Länge von 15m. Er wird hauptsächlich zur Brandbekämpfung von Vegetationsbränden eingesetzt, da er aufgrund seiner geringen Größe und Gewicht ein leichteres Handling in unwegsamen Terrain ermäglicht.",
+        "visibility": false,
+        "picture": "images/Rolltore/G6/D_Druckschlauch.jpg"
     },
     {
         "name": "Kübelspritze",
@@ -28,6 +34,23 @@
         "description": "Der verladene ABC-Pulverlöscher, kann zur Bekämpfung von Bränden der Brandklassen A, B und C eingesetzt werden. Die Brandklasse A umfasst alle brennbare, feste Stoffe, welcher unter Glutbildung verbrennen, Brandklasse B alle brennbare Flüssigkeiten oder verflüssigte Stoffe und Brandklasse C auf alle brennbare Gase wie Methan, Propan oder Butan.",
         "visibility": false,
         "picture": "images/Rolltore/G6/Pulverlöscher.jpg"
+    },
+    {
+        "name": "Hygieneboard",
+        "description": "Das Hygieneboard ist ein wichtiges Teil des Hygieneschutzkonzepts. Es versorgt die Einsatzkräfte mit sauberem Wasser, Seife, Desinfektionsmittel, Druckluft und Handtüchern. Das Hygieneboard ist bei Brandeinsätzen mit hoher Kontamination unverzichtbar.",
+        "visibility": false,
+        "picture": "images/Rolltore/G6/Hygienebord.jpg"
+    },
+    {
+        "name": "Schnellangriffsverteiler",
+        "description": "Der Schnellangriffsverteiler besteht aus einem Verteiler mit 2 B-Druckabgängen und einem C-Druckabgang und ist bereits mit einem angekoppelten B-Schlauch verladen. Der Verteiler ist essentiell bei der Brandbekämpfung, da er den Löschangriff von drei Strahlrohren über eine Pumpe ermöglicht.",
+        "visibility": false,
+        "picture": "images/Rolltore/G6/Schnellangriffsverteiler.jpg"
+    },
+    {
+        "name": "C-Schnellangriff",
+        "description": "Der C-Schnellangriff besteht aus einem C-Druckschlauch und einem C-Strahlrohr. Er kann direkt mit dem Wassersystem des Löschfahrzeugs verbunden werden und ermöglicht eine schnelle und effektive Brandbekämpfung bei kleineren Bränden.",
+        "visibility": false,
+        "picture": "images/Rolltore/G6/"
     }
-
 ]
