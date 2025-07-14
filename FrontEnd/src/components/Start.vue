@@ -67,9 +67,25 @@
           <img class="image" src="images/lz-videos-icon.png">
         </a>
       </div>
+    </div>
 
+     <div class="wrapper content-section">
+
+       <div class="img-wrapper">
+         <a href="/LoeschZwerge/hydrantdemo">
+           <img class="image" src="images/hydrantenschild.png">
+         </a>
+       </div>
+
+      <div class="box">
+        <h5 class="box-heading">Hydrantenspiel</h5>
+        <p>
+          Die Feuerwehr braucht deine Hilfe! Die Mannschaft will eine Wasserversorgung aufbauen, kannst du den <a href="/LoeschZwerge/hydrantdemo">Hydranten</a> finden?
+        </p>
+      </div>
     </div>
   </div>
+
 </template>
 
 

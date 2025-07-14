@@ -1,49 +1,3 @@
-<!-- <template>
-  <div class="image-wrapper">
-    <div class="image-container">
-      <img
-        src="images/Feuerwehrauto-LF10.svg"
-        alt="Feuerwehrauto"
-        class="firetruck"
-      />
-
-      <!-- Sichtbarer Hotspot (prozentual positioniert)
-      <a
-        href="/LoeschZwerge/g1"
-        class="hotspot"
-        style="top: 42%; left: 47%; width: 14%; height: 20%"
-      >
-        RolltorTH
-      </a>
-      <a
-        href="/LoeschZwerge/g3"
-        class="hotspot"
-        style="top: 42%; left: 62%; width: 12.5%; height: 19%"
-      >
-        RolltorAGT
-      </a>
-      <a
-        href="/LoeschZwerge/g5"
-        class="hotspot"
-        style="top: 42%; left: 75.7%; width: 13%; height: 20%"
-      >
-        RolltorAT
-      </a>
-      <a
-        class="hotspot sirene-hotspot"
-        style="top: 36.2%; left: 9.7%; width: 2.3%; height: 1.9%"
-      >
-        Sirene
-        <img
-          src="images/Sirene-Animation.gif"
-          alt="Sirene"
-          class="sirene-gif"
-        />
-      </a>
-    </div>
-  </div>
-</template> -->
-
 <template>
   <div class="image-wrapper">
     <div class="image-container">
@@ -91,7 +45,6 @@
         </div> 
       </a>
     </div>
-    <!-- Navigation -->
     <button class="nav-button left" @click="prev">
       <img src="images/arrow_left.png" />
     </button>
@@ -116,7 +69,7 @@ const images = [
         width: "16.8%",
         height: "24.5%",
         href: "/LoeschZwerge/g1",
-        label: "G1",
+        label: "RolltorTH",
       },
       {
         top: "35%",
@@ -124,7 +77,7 @@ const images = [
         width: "15.3%",
         height: "22.6%",
         href: "/LoeschZwerge/g3",
-        label: "G3",
+        label: "RolltorAGT",
       },
       {
         top: "35%",
@@ -132,7 +85,7 @@ const images = [
         width: "16%",
         height: "24.5%",
         href: "/LoeschZwerge/g5",
-        label: "G5",
+        label: "RolltorAT",
       },
     ],
   },
@@ -145,7 +98,7 @@ const images = [
         width: "15.3%",
         height: "26%",
         href: "/LoeschZwerge/gr",
-        label: "GR",
+        label: "Rolltor Pumpe",
       },
     ],
   },
@@ -158,7 +111,7 @@ const images = [
         width: "16.8%",
         height: "24.5%",
         href: "/LoeschZwerge/g2",
-        label: "G2",
+        label: "Rolltor Stromversorgung",
       },
       {
         top: "35%",
@@ -166,7 +119,7 @@ const images = [
         width: "15.3%",
         height: "22.6%",
         href: "/LoeschZwerge/g4",
-        label: "G4",
+        label: "Rolltor Wasserführende Armaturen",
       },
       {
         top: "35%",
@@ -174,7 +127,7 @@ const images = [
         width: "16%",
         height: "24.5%",
         href: "/LoeschZwerge/g6",
-        label: "G6",
+        label: "Rolltor Schlauchmaterial",
       },
     ],
   },
@@ -208,34 +161,16 @@ function next() {
   margin: 0 auto;
 }
 
-/* Container mit relative Position & Responsive Verhalten */
 .image-container {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
 }
 
-/* Das Bild füllt 100% des Containers */
 .firetruck {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
-}
-
-.sirene-hotspot .sirene-gif {
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  object-fit: contain;
-  display: none; /* Anfangs unsichtbar */
-  pointer-events: none;
-  z-index: 20;
-}
-
-.sirene-hotspot:hover .sirene-gif {
   display: block;
 }
 
@@ -265,12 +200,11 @@ function next() {
   cursor: pointer;
 }
 
-/* Hotspot-Boxen */
 .hotspot {
   position: absolute;
-  background-color: transparent; /* Keine Farbe */
-  border: none; /* Kein Rahmen */
-  color: transparent; /* Text unsichtbar */
+  background-color: transparent;
+  border: none;
+  color: transparent;
   font-size: 12px;
   text-align: center;
   text-decoration: none;
@@ -283,8 +217,8 @@ function next() {
 }
 
 .hotspot:hover {
-  color: #fff; /* Textfarbe beim Hover */
-  background-color: rgb(0 0 0 / 50%); /* Halbtransparenter Hintergrund */
+  color: #fff;
+  background-color: rgb(0 0 0 / 50%);
 }
 
 .hotspot.hotspot-front {
@@ -316,7 +250,7 @@ function next() {
   transition: opacity 0.3s ease, visibility 0.3s ease;
   pointer-events: none;
 
-  white-space: normal; /* allow text wrapping */
+  white-space: normal;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
