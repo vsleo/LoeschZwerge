@@ -14,22 +14,6 @@
           Feuerwehrauto</a
         >
         <a
-          href="/LoeschZwerge/about"
-          :class="{
-            active: currentPath === '/about' || currentPath === '/about/',
-          }"
-        >
-          About us</a
-        >
-        <a
-          href="/LoeschZwerge/quiz"
-          :class="{
-            active: currentPath === '/quiz' || currentPath === '/quiz/',
-          }"
-        >
-          Quiz</a
-        >
-        <a
           href="/LoeschZwerge/brandschutz"
           :class="{
             active:
@@ -45,6 +29,14 @@
               currentPath === '/hydrantdemo' || currentPath === '/hydrantdemo/',
           }"
           >Hydrantdemo</a
+        >
+        <a
+          href="/LoeschZwerge/quiz"
+          :class="{
+            active: currentPath === '/quiz' || currentPath === '/quiz/',
+          }"
+        >
+          Quiz</a
         >
       </nav>
     </div>
