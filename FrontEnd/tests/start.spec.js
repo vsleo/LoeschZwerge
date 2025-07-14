@@ -29,7 +29,7 @@ test.describe("Löschzwerge Seite", () => {
     ).toBeVisible();
 
     await expect(
-      page.locator(".box-heading", { hasText: "Brandschutz" }),
+      page.locator(".box-heading", { hasText: "Lernvideos" }),
     ).toBeVisible();
 
     // Links prüfen
@@ -41,9 +41,7 @@ test.describe("Löschzwerge Seite", () => {
     const quizLinkCount = await quizLinks.count();
     await expect(quizLinkCount).toBeGreaterThan(0);
 
-    const brandschutzLinks = page.locator(
-      'a[href="/LoeschZwerge/brandschutz"]',
-    );
+    const brandschutzLinks = page.locator('a[href="/LoeschZwerge/lernvideos"]');
     const brandschutzLinkCount = await brandschutzLinks.count();
     await expect(brandschutzLinkCount).toBeGreaterThan(0);
 

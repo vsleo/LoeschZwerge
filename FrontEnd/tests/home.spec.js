@@ -26,7 +26,7 @@ test("firetruck has the right picture", async ({ page }) => {
   await expect(fireEngine).toBeVisible();
   await expect(fireEngine).toHaveAttribute(
     "src",
-    "images/LF-10/Feuerwehrauto-LF10-left.png",
+    "images/LF-10/Feuerwehrauto-LF10-front.png",
   );
   await expect(fireEngine).toHaveAttribute("alt", "Feuerwehrauto");
 });

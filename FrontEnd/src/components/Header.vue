@@ -39,14 +39,6 @@
           }"
           >Hydranten-Game</a
         >
-        <a
-          href="/LoeschZwerge/about"
-          :class="{
-            active: currentPath === '/about' || currentPath === '/about/',
-          }"
-        >
-          About us</a
-        >
       </nav>
     </div>
   </header>

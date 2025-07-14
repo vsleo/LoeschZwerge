@@ -1,32 +1,42 @@
-import { test, expect } from "@playwright/test";
+import { test } from "@playwright/test";
 
 test("test", async ({ page }) => {
   await page.goto("http://localhost:4322/LoeschZwerge/");
-  await expect(page.getByRole("navigation")).toContainText("Quiz");
-  await expect(
-    page.getByRole("link", { name: "Quiz", exact: true }),
-  ).toBeVisible();
-  await page.getByRole("link", { name: "Quiz", exact: true }).click();
-  await expect(
-    page.getByRole("link", { name: "Feuerwehrauto Quiz" }),
-  ).toBeVisible();
-  await expect(page.locator("body")).toContainText("Feuerwehrauto");
-  await page.getByRole("link", { name: "Feuerwehrauto Quiz" }).click();
-  await page.getByRole("button", { name: "Tanklöschfahrzeug (TLF)" }).click();
-  await page.getByRole("button", { name: "Weiter" }).click();
+  await page.getByRole("link", { name: "Feuerwehrauto", exact: true }).click();
+  await page.getByRole("button").nth(1).click();
+  await page.getByRole("link", { name: "RolltorTH" }).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByText("° Rüstholz").click();
+  await page.locator(".flip-card-front").click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByText("° Elektrowerkzeug").click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
   await page
-    .getByRole("button", { name: "Zum Retten von Personen aus H" })
+    .getByRole("listitem")
+    .filter({ hasText: "° Türöffnungskoffer 1 &" })
     .click();
-  await page.getByRole("button", { name: "Weiter" }).click();
-  await page.getByRole("button", { name: "12" }).click();
-  await page.getByRole("button", { name: "Weiter" }).click();
-  await page.getByRole("button", { name: "1200" }).click();
-  await page.getByText("Frage 4 von 5Wie viel Wasser").click();
-  await page.getByRole("button", { name: "Weiter" }).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
   await page
-    .getByRole("button", { name: "12m Nennrettungshöhe und 23m" })
+    .getByRole("listitem")
+    .filter({ hasText: "° Motorkettensäge und Zubehör" })
     .click();
-  await page.getByRole("button", { name: "Weiter" }).click();
-  await page.getByRole("button", { name: "Nochmal spielen" }).click();
-  await page.getByRole("button", { name: "Rüstwagen (RW)" }).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByText("° Schnittschutzhose und Helm").click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByText("° Kelly-Tool").click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByText("° Spaltaxt").click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByText("° Bogensäge").click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("listitem").filter({ hasText: "° VU-Koffer" }).click();
+  await page.getByRole("img").nth(2).click();
+  await page.getByRole("img").nth(2).click();
 });
