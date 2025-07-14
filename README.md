@@ -43,7 +43,7 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
 <br>
 
 ## **Wie erreicht man die Website**
-    *Es gibt zwei Wege, um die Website zu erreichen.*
+    Es gibt zwei Wege, um die Website zu erreichen.
 
 ### **1. Aufrufen durch GitHub-Pages (für normale Nutzer empfohlen)**
     Der einfache Weg, um die Website zu erreichen, ist über den GitHub-Pages-Link:  
