@@ -22,13 +22,6 @@
       <h1>Willkommen bei den Löschzwergen!</h1>
     </div>
 
-    <!-- <div class="wrapper center">
-      <p class="paragraph">
-        Was genau ist die Feuerwehr? Und was macht sie überhaupt?<br />
-        Bei den Löschzwergen lernst du mit Spiel und Spaß alles rund ums Feuerwehrauto!
-      </p>
-    </div> -->
-
     <div class="wrapper content-section">
       <div class="box">
         <h2 class="box-heading">Feuerwehrauto</h2>
@@ -74,9 +67,25 @@
           <img class="image" src="images/lz-videos-icon.png">
         </a>
       </div>
+    </div>
 
+     <div class="wrapper content-section">
+
+       <div class="img-wrapper">
+         <a href="/LoeschZwerge/hydrantdemo">
+           <img class="image" src="images/hydrantenschild.png">
+         </a>
+       </div>
+
+      <div class="box">
+        <h5 class="box-heading">Hydrantenspiel</h5>
+        <p>
+          Die Feuerwehr braucht deine Hilfe! Die Mannschaft will eine Wasserversorgung aufbauen, kannst du den <a href="/LoeschZwerge/hydrantdemo">Hydranten</a> finden?
+        </p>
+      </div>
     </div>
   </div>
+
 </template>
 
 
@@ -183,12 +192,6 @@ a:hover {
   text-align: center;
 }
 
-.img-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 33.5vw;
-}
-
 .image {
   height: 300px;
   transition: transform 0.3s ease-out;
@@ -200,12 +203,17 @@ a:hover {
   cursor: pointer;
 }
 
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 33.5vw;
+}
+
 .top-slider {
   width: 100vw;
   height: 230px;
   overflow: hidden;
   position: relative;
-  background-color: black;
   box-shadow: 0 5px 10px rgb(255 255 255 / 70%);
 }
 
