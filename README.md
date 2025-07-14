@@ -49,25 +49,30 @@ Sobald man als Nutzer mit einem der Rolltore des Fahrzeugs interagiert, öffnet 
 
 ## **Geplanter Kontent und Features für die Zukunft**
 
+
 ### **Belohnungen für erfolgreich abgeschlossenne Quizze**
     In Zukunft soll für das erfolgreiche Abschließen der Quizze Sammelobjekte erhalten werden.
     Dabei handelt es sich voraussichtlich um Sammelkarten im Pixel-Style, welche zu dem Thema Feuerwehrzwerge passen.
     Inwiefern der Sammelfortschritt gespeichert wird, steht noch nicht fest.
 
+
 ### **Brandschutz und weitere Prävention**
-   Viele Unfälle und Brände können leicht vermieden, bzw. schnell unter Kontrolle gebracht werden.
-   Deshalb liegt unser Fokus weiterhin dabei, Brandschutz und simple Erstmaßnahmen zu vermitteln,
-   die oft schlimmeres verhindern können.
+    Viele Unfälle und Brände können leicht vermieden, bzw. schnell unter Kontrolle gebracht werden.
+    Deshalb liegt unser Fokus weiterhin dabei, Brandschutz und simple Erstmaßnahmen zu vermitteln,
+    die oft schlimmeres verhindern können.
+
 
 ### **Page für Erste-Hilfe**
     Es ist ebenfalls eine Page vorgesehen, welche sich mit der Aufklärung über Erste-Hilfe befasst. 
     Die Seite soll stark Kontent-Basiert sein und durch gezielt gewählte Bilder die richtige Erste-Hilfe vermitteln,
     welche selbst durch Laien problemlos durchgeführt werden kann.
 
+
 ### **Informationen über den Standardangriff nach FwDv3**
     Außerdem ist es vorgesehen, durch eine interaktive Karte den standard Löschangriff nach FwDv3 zu erläutern. 
     Hierbei soll ein Schema genutzt werden, das durch interaktive Hotspots das Wissen spielerisch vermittelt. 
     Das Schema repräsentiert den Fertig aufgebauten Löschangriff.
+
 
 ### **Visuelle Anpassung an Mobile-Geräte und verschiedene Browser**
     In Zukunft soll die visuelle Darstellung ebenfalls auf verschiedene Browser, sowie an die Mobile-Nutzung angepasst werden.
