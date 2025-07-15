@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 
 test("test", async ({ page }) => {
-  await page.goto("http://localhost:4322/LoeschZwerge/");
+  await page.goto("http://localhost:4321/LoeschZwerge/");
   await page.getByRole("link", { name: "Lernvideos" }).click();
   await page.getByText("Was ist Feuer und wie löscht").click();
   await page

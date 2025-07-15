@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 
 test("test", async ({ page }) => {
-  await page.goto("http://localhost:4322/LoeschZwerge/");
+  await page.goto("http://localhost:4321/LoeschZwerge/");
   await page.getByRole("link", { name: "Quiz", exact: true }).click();
   await page.getByRole("link", { name: "Brandschutz Quiz" }).click();
   await page.getByRole("button", { name: "Er warnt frühzeitig vor" }).click();
